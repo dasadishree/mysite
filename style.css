@@ -1,0 +1,196 @@
+body{
+    background-image: url("aura.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Valera Round", sans-serif 
+}
+h1{
+    color:purple;
+    font-size: 300%;
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+p, li{
+    font-size: large;
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    color:white;
+}
+h2{
+    color:purple;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: 200%;
+    margin:0;
+    padding:0;
+    border:0;
+}
+#note{
+    color:hotpink;
+    background-color: white;
+    display: inline; 
+}
+h3{
+    color:hotpink;
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+.underline{
+    text-decoration: underline wavy purple;
+    text-underline-offset: 4px;
+
+    color:purple;
+}
+
+/* intro section */
+.me{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+
+    /* bead border */
+    max-width: 1700px;
+    border: 40px solid transparent;
+    border-style: solid;
+    border-image-source: url("beadborder.png");
+    border-image-slice: 20; 
+    border-image-width: 30px;
+    border-image-repeat: round;
+    border-image-outset: 0px;
+}
+.intro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background-color: rgba(216, 112, 147, 0.5);
+    padding-bottom: 5%;
+}
+.intro-text{
+    background-color: rgba(223, 167, 217, 0.5);
+    padding-left:5%;
+    padding-right:5%;
+    
+    border-radius: 10%;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 5%;
+
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.8);
+}
+.intro-img{
+    margin-right: 10%;
+    padding-top:3%;
+}
+
+/* bead border line */
+.bead-line {
+    width: 100%;
+    height: 50px;
+    background-image: url("beadline.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+/* navbar */
+.navbar{
+    background-color:hotpink;
+    padding: 10px;
+    margin: 0px;
+    border: 0px;
+}
+.navbar-item{
+    margin-left: 10px;
+    margin-right: 10px;
+    color:white;
+    padding-bottom:15%;
+
+    text-decoration: underline wavy white;
+    text-underline-offset: 4px;
+}
+.navbar-name{
+    color: purple;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    float:right;
+    margin-right: 1%;
+    font-size: 135%;
+}
+
+/* line 1 (curreent & posttions) */
+.currently{
+    padding-left: 10%;
+    flex: 1;
+
+    background-color: rgba(207, 115, 196, 0.677);
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.8);
+
+    padding: 1%;
+    border-radius: 10%;
+}
+.positions{
+    padding-left: 10%;
+    background-color: rgba(207, 115, 196, 0.464);
+    box-shadow: 0 0 100px rgba(255, 255, 255, 1);
+
+    padding: 1%;
+    border-radius: 10%;
+}
+.line1{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+/* projectgd */
+.projects-section{
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 3%;
+    /* margin-bottom: 10%; */
+}
+.projects{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    background-color: rgba(255, 205, 252, 0.508);
+    box-shadow: 0 0 100px rgb(243, 142, 243);
+    padding: 1%;
+    border-radius: 10%;
+
+    width: 250px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    p{
+        margin:0;
+        padding:0
+    }
+    strong{
+        margin:0;
+        padding:0;
+    }
+    h3{
+        margin:2px;
+    }
+}
+
+
+/* credit bar */
+.credbar{
+    background-color: hotpink;
+    padding: 10px; 
+    margin: 0;
+    border: 0;
+    height: auto; 
+    p{
+        padding:0;
+        margin:0;
+    }
+}
