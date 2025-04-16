@@ -13,3 +13,5 @@ TO-DO
 - maybe a fun section about me (music and my fav shows and stuff!!!)
 - add SAT??
 - make it compatible for phone
+- add to-done
+- remove the word "recent" from the project section and maybe delete irrelvant stuff
