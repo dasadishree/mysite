@@ -1,0 +1,994 @@
+---
+const {title, description} = Astro.props;
+import auraImage from "../assets/aura.jpg";
+import meImage from "../assets/me.jpg";
+import hcImage from "../assets/hc.svg";
+import codenextImage from "../assets/codenext.png";
+import coloredLogoImage from "../assets/coloredlogo-modified.png";
+import gwc from "../assets/gwc.png";
+import herricksImage from "../assets/herricks.png";
+import parthenon from "../assets/p.webp";
+import im2 from "../assets/im2.webp";
+import img8656 from "../assets/IMG_8656.png";
+import img9044 from "../assets/IMG_9044.png";
+import img2439 from "../assets/IMG_2439.PNG";
+import img1791 from "../assets/IMG_1791.PNG.png";
+import img1117 from "../assets/IMG_1117.PNG";
+import img0706 from "../assets/IMG_0706.PNG";
+import gcn166 from "../assets/GCN Show June 2025_166.jpg";
+import gcn67 from "../assets/GCN Show June 2025_67.jpg";
+import codenext143 from "../assets/Code Next August 2025_143.JPEG";
+import codenext146 from "../assets/Code Next August 2025_146.JPEG";
+import codenext150 from "../assets/Code Next August 2025_150.JPEG";
+import codenext34 from "../assets/Code Next August 2025_34.JPEG";
+import img1534 from "../assets/IMG_1534.JPG";
+import img3578 from "../assets/IMG_3578.JPG";
+import img4546 from "../assets/IMG_4546.jpg";
+import img4560 from "../assets/IMG_4560.jpg";
+import img4572 from "../assets/IMG_4572.jpg";
+import img5335 from "../assets/IMG_5335.jpg";
+import img5336 from "../assets/IMG_5336.jpg";
+import img6294 from "../assets/IMG_6294.jpg";
+import img6295 from "../assets/IMG_6295.jpg";
+import img8221 from "../assets/IMG_8221.JPG";
+import img4286 from "../assets/IMG_4286.jpeg";
+import img4288 from "../assets/IMG_4288.jpeg";
+import img061C from "../assets/061C518D-3375-4402-9F39-1F7B5B400535.JPG";
+import wiccPhoto from "../assets/2025 WiCC HS Programming Workshop Group Photo.JPG";
+import img4up from "../assets/hey.jpg";
+import img524c from "../assets/524cdd20-b096-4e78-8625-ced6d7d5fb2b.JPG";
+import img5AB from "../assets/5ABFA3AA-B37A-42AB-B8DB-F625D4CF7505.jpeg";
+import img6125 from "../assets/6125dcf3-20cd-45b9-9b2d-1350a67addae.jpeg";
+import img6417 from "../assets/6417d834-c1f1-4f60-a836-2c8b0162d695.JPG";
+import img7915 from "../assets/79150028722__6B0C1233-81E3-4DBB-BB9F-347524A71C26.jpg";
+import imgD8B3 from "../assets/D8B3C051-1CA1-4435-A0A7-8BB2AD95582E.JPG";
+import imgFFE3 from "../assets/FFE3B681-2497-4FDD-9878-0426DB68A82F.JPG";
+import fullSize from "../assets/FullSizeRender.jpg";
+import img0004 from "../assets/IMG_0004.jpg";
+import img0005 from "../assets/IMG_0005.jpg";
+import img0779 from "../assets/IMG_0779.jpg";
+import img1611 from "../assets/IMG_1611.jpg.jpeg";
+import img1612 from "../assets/IMG_1612.jpg.jpeg";
+import img1757 from "../assets/IMG_1757.jpg";
+import img1761 from "../assets/IMG_1761.HEIC.jpg";
+import img3091 from "../assets/IMG_3091.jpg";
+import img3091png from "../assets/IMG_3091.PNG";
+import img3289 from "../assets/IMG_3289.jpg";
+import img3709 from "../assets/IMG_3709.jpg";
+import img3838 from "../assets/IMG_3838.jpg";
+import img4073 from "../assets/IMG_4073.jpg";
+import img4527 from "../assets/IMG_4527.jpg";
+import img4926 from "../assets/IMG_4926.JPG";
+import img5170 from "../assets/IMG_5170.JPG";
+import img5172 from "../assets/IMG_5172.JPG";
+import img5177 from "../assets/IMG_5177.JPG";
+import img5181 from "../assets/IMG_5181.JPG";
+import img5184 from "../assets/IMG_5184.JPG";
+import img5591 from "../assets/IMG_5591.HEIC.jpg";
+import img5616 from "../assets/IMG_5616.jpg";
+import img6455 from "../assets/IMG_6455.jpg";
+import img6616 from "../assets/IMG_6616.jpg";
+import img6788 from "../assets/IMG_6788.jpg";
+import img6806 from "../assets/IMG_6806.jpg";
+import img7373 from "../assets/IMG_7373.jpg";
+import img7427 from "../assets/IMG_7427.jpg";
+import img7436 from "../assets/IMG_7436.jpg";
+import img7817 from "../assets/IMG_7817.jpg";
+import img7828 from "../assets/IMG_7828.jpg";
+import img7829 from "../assets/IMG_7829.jpg";
+import img9805 from "../assets/IMG_9805.jpg";
+import img9939 from "../assets/IMG_9939.jpg";
+import imgP101 from "../assets/P1010936.jpg";
+---
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Pinyon+Script&display=swap" rel="stylesheet">
+        <title>Adishree Das</title>
+    </head>
+
+    <body>
+        <header class="hero">
+            <div class="auraImg">
+                <img src={auraImage.src} alt="aura background"/>
+            </div>
+            <div class="container">
+                <div class="meSection">
+                    <div class="photo-caption">
+                        <span>click on my picture!!</span>
+                        <svg class="curved-arrow" width="50" height="50" viewBox="0 0 50 50" fill="none">
+                            <path d="m40 10C35 15 25 15 15 35M15 35L12 25M15 35L25 32" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
+                    <img src={meImage.src} alt="an image of me (adishree)!!" class="mePhoto" id="main-photo">
+
+                    <div class="surround-images">
+                        <span class="pop-item item-1">
+                            <img src={hcImage.src} alt="Hack Club" />
+                        </span>
+                        <span class="pop-item item-2">
+                            <img src={codenextImage.src} alt="CodeNext" />
+                        </span>
+                        <span class="pop-item item-3">
+                            <img src={coloredLogoImage.src} alt="Logo" />
+                        </span>
+                        <span class="pop-item item-4">
+                            <img src={gwc.src} alt="Girls Who Code" />
+                        </span>
+                        <span class="pop-item item-5">
+                            <img src={herricksImage.src} alt="Herricks" />
+                        </span>
+                        <span class="pop-item item-6">
+                            <img src={parthenon.src} alt="Parthenon @Athena Hack Club"/>
+                        </span>
+                        <span class="pop-item item-7 shape-circle size-small">
+                            <img src={im2.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-8 shape-star size-medium">
+                            <img src={img8656.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-9 shape-heart size-small">
+                            <img src={img9044.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-10 shape-circle size-medium">
+                            <img src={img2439.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-11 shape-star size-small">
+                            <img src={img1791.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-12 shape-heart size-medium">
+                            <img src={img1117.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-13 shape-circle size-small">
+                            <img src={img0706.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-14 size-medium">
+                            <img src={gcn166.src} alt="GCN Show" />
+                        </span>
+                        <span class="pop-item item-15 shape-star size-small">
+                            <img src={gcn67.src} alt="GCN Show" />
+                        </span>
+                        <span class="pop-item item-16 shape-heart size-medium">
+                            <img src={codenext143.src} alt="Code Next" />
+                        </span>
+                        <span class="pop-item item-17 shape-circle size-small">
+                            <img src={codenext146.src} alt="Code Next" />
+                        </span>
+                        <span class="pop-item item-18 shape-star size-medium">
+                            <img src={codenext150.src} alt="Code Next" />
+                        </span>
+                        <span class="pop-item item-19 shape-heart size-small">
+                            <img src={codenext34.src} alt="Code Next" />
+                        </span>
+                        <span class="pop-item item-20 size-medium">
+                            <img src={img1534.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-21 shape-circle size-small">
+                            <img src={img3578.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-22 shape-star size-medium">
+                            <img src={img4546.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-23 shape-heart size-small">
+                            <img src={img4560.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-24 shape-circle size-medium">
+                            <img src={img4572.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-25 size-small">
+                            <img src={img5335.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-26 shape-star size-medium">
+                            <img src={img5336.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-27 shape-heart size-small">
+                            <img src={img6294.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-28 shape-circle size-medium">
+                            <img src={img6295.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-29 size-small">
+                            <img src={img8221.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-30 shape-star size-medium">
+                            <img src={img4286.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-31 shape-heart size-small">
+                            <img src={img4288.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-32 shape-circle size-medium">
+                            <img src={img061C.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-33 size-small">
+                            <img src={wiccPhoto.src} alt="WiCC Workshop" />
+                        </span>
+                        <span class="pop-item item-34 shape-star size-medium">
+                            <img src={img4up.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-35 shape-heart size-small">
+                            <img src={img524c.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-36 shape-circle size-medium">
+                            <img src={img5AB.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-37 size-small">
+                            <img src={img6125.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-38 shape-star size-medium">
+                            <img src={img6417.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-39 shape-heart size-small">
+                            <img src={img7915.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-40 shape-circle size-medium">
+                            <img src={imgD8B3.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-41 size-small">
+                            <img src={imgFFE3.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-42 shape-star size-medium">
+                            <img src={fullSize.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-43 shape-heart size-small">
+                            <img src={img0004.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-44 shape-circle size-medium">
+                            <img src={img0005.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-45 size-small">
+                            <img src={img0779.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-46 shape-star size-medium">
+                            <img src={img1611.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-47 shape-heart size-small">
+                            <img src={img1612.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-48 shape-circle size-medium">
+                            <img src={img1757.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-49 size-small">
+                            <img src={img1761.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-50 shape-star size-medium">
+                            <img src={img3091.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-51 shape-heart size-small">
+                            <img src={img3091png.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-52 shape-circle size-medium">
+                            <img src={img3289.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-53 size-small">
+                            <img src={img3709.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-54 shape-star size-medium">
+                            <img src={img3838.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-55 shape-heart size-small">
+                            <img src={img4073.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-56 shape-circle size-medium">
+                            <img src={img4527.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-57 size-small">
+                            <img src={img4926.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-58 shape-star size-medium">
+                            <img src={img5170.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-59 shape-heart size-small">
+                            <img src={img5172.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-60 shape-circle size-medium">
+                            <img src={img5177.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-61 size-small">
+                            <img src={img5181.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-62 shape-star size-medium">
+                            <img src={img5184.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-63 shape-heart size-small">
+                            <img src={img5591.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-64 shape-circle size-medium">
+                            <img src={img5616.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-65 size-small">
+                            <img src={img6455.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-66 shape-star size-medium">
+                            <img src={img6616.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-67 shape-heart size-small">
+                            <img src={img6788.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-68 shape-circle size-medium">
+                            <img src={img6806.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-69 size-small">
+                            <img src={img7373.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-70 shape-star size-medium">
+                            <img src={img7427.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-71 shape-heart size-small">
+                            <img src={img7436.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-72 shape-circle size-medium">
+                            <img src={img7817.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-73 size-small">
+                            <img src={img7828.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-74 shape-star size-medium">
+                            <img src={img7829.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-75 shape-heart size-small">
+                            <img src={img9805.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-76 shape-circle size-medium">
+                            <img src={img9939.src} alt="Image" />
+                        </span>
+                        <span class="pop-item item-77 size-small">
+                            <img src={imgP101.src} alt="Image" />
+                        </span>
+                    </div>
+                </div>
+
+                <div class="text">
+                    <h1>welcome to</h1>
+                    <p class="subtitle">adishree's internet corner</p>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>
+
+<style is:global>
+    .hero{
+        position: relative;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subtitle{
+        font-family: 'Pinyon Script', system-ui;
+        font-size: 10vh;
+    }
+
+    body{
+        margin: 0;
+        background-color: #fffaf0;
+        overflow-x: hidden;
+    }
+    .auraImg{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 100%;
+        max-height: 100vh;
+        z-index: -1;
+        opacity: 0.6;
+        filter: blur(20px);
+        animation: pulse 8s infinite alternate;  
+        img{
+            height:100%;
+            width:auto;
+        } 
+    }
+    .meSection{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:1rem;
+        margin:5vh;
+    }
+    .mePhoto{
+        width: 250px;
+        height:250px;
+        object-fit: cover;
+        border-radius: 30px;
+        border: 15px dashed pink;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        transform: rotate(-2deg);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+    .mePhoto:hover{
+        transform:rotate(0deg) scale(1.05);
+    }
+    .text{
+        text-align: center;
+        margin-top: -20px;
+        position: relative;
+        z-index: 20;
+    }
+    h1{
+        font-size: 3rem;
+        margin: 0;
+        color: purple;
+    }
+    .subtitle{
+        font-family: 'Pinyon Script', cursive;
+        font-size: clamp(3rem, 10vh, 6rem);
+        margin: -15px 0 0 0;
+        color: pink;
+    }
+
+    @keyframes pulse{
+        from {transform: translate(-50%, -50%) scale(1.1); opacity:0.5; }
+        to {transform: translate(-50%, -50%) scale(1.1); opacity: 0.8; }
+    }
+    .photo-caption{
+        position: absolute;
+        right: 13vw;
+        top: -6vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 120px;
+        color: white;
+        font-size: 1.1rem;
+        line-height: 1.2;
+        transform: rotate(5deg);
+        pointer-events: none;
+    }
+    .curved-arrow{
+        margin-bottom: 5px;
+        color: purple;
+    }
+    .meSection{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        margin: 5vh;
+    }
+
+    .surround-images{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 0;
+        height: 0;
+        pointer-events: none;
+    }
+    
+    .pop-item{
+        position: absolute;
+        opacity: 0;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        pointer-events: none;
+        z-index: -1;
+        top: 0;
+        left: 0;
+        transform: translate(-50%, -50%) scale(0);
+        filter: drop-shadow(0 4px 8px rgba(0,0,0,0.2));
+    }
+    
+    .pop-item img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+    
+    /* Size variations - items 1-6 are largest */
+    .pop-item.item-1 img,
+    .pop-item.item-2 img,
+    .pop-item.item-3 img,
+    .pop-item.item-4 img,
+    .pop-item.item-5 img,
+    .pop-item.item-6 img {
+        width: 250px;
+        height: 250px;
+        object-fit: contain;
+    }
+    
+    .pop-item.size-medium img {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .pop-item.size-small img {
+        width: 130px;
+        height: 130px;
+    }
+    
+    /* Shape masks */
+    .pop-item.shape-circle img {
+        clip-path: circle(50%);
+        border-radius: 50%;
+    }
+    
+    .pop-item.shape-heart img {
+        clip-path: polygon(50% 0%, 0% 38%, 12% 50%, 0% 62%, 25% 100%, 50% 75%, 75% 100%, 100% 62%, 88% 50%, 100% 38%);
+    }
+    
+    .pop-item.shape-star img {
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    }
+    .is-popped .pop-item{
+        opacity: 1;
+        z-index: 10;
+        transform: translate(-50%, -50%) scale(1);
+    }
+    /* Main items - positioned to avoid text area (text is below, so keep items above and to sides) */
+    .is-popped .item-1 { 
+        transform: translate(calc(-50% - 40vw), calc(-50% - 20vh)) rotate(-20deg) scale(1); 
+        transition-delay: 0.025s;
+    }
+    .is-popped .item-2 { 
+        transform: translate(calc(-50% + 40vw), calc(-50% - 20vh)) rotate(20deg) scale(1); 
+        transition-delay: 0.05s;
+    }
+    .is-popped .item-3 { 
+        transform: translate(calc(-50% - 40vw), calc(-50% - 5vh)) rotate(20deg) scale(1); 
+        transition-delay: 0.075s;
+    }
+    .is-popped .item-4 { 
+        transform: translate(calc(-50% + 40vw), calc(-50% - 5vh)) rotate(-20deg) scale(1); 
+        transition-delay: 0.1s;
+    }
+    .is-popped .item-5 { 
+        transform: translate(calc(-50% - 30vw), calc(-50% - 30vh)) rotate(-10deg) scale(1); 
+        transition-delay: 0.125s;
+    }
+    .is-popped .item-6 {
+        transform: translate(calc(-50% + 30vw), calc(-50% - 30vh)) rotate(-10deg) scale(1);
+        transition-delay: 0.15s;
+    }
+    
+    /* Additional items positioned around the screen - avoiding text area completely */
+    .is-popped .item-7 {
+        transform: translate(calc(-50% - 50vw), calc(-50% - 12vh)) rotate(15deg) scale(1);
+        transition-delay: 0.175s;
+    }
+    .is-popped .item-8 {
+        transform: translate(calc(-50% + 50vw), calc(-50% - 12vh)) rotate(-15deg) scale(1);
+        transition-delay: 0.2s;
+    }
+    .is-popped .item-9 {
+        transform: translate(calc(-50% - 55vw), calc(-50% - 2vh)) rotate(25deg) scale(1);
+        transition-delay: 0.225s;
+    }
+    .is-popped .item-10 {
+        transform: translate(calc(-50% + 55vw), calc(-50% - 2vh)) rotate(-25deg) scale(1);
+        transition-delay: 0.25s;
+    }
+    .is-popped .item-11 {
+        transform: translate(calc(-50% - 20vw), calc(-50% - 35vh)) rotate(10deg) scale(1);
+        transition-delay: 0.275s;
+    }
+    .is-popped .item-12 {
+        transform: translate(calc(-50% + 20vw), calc(-50% - 35vh)) rotate(-10deg) scale(1);
+        transition-delay: 0.3s;
+    }
+    .is-popped .item-13 {
+        transform: translate(calc(-50% - 20vw), calc(-50% - 8vh)) rotate(10deg) scale(1);
+        transition-delay: 0.325s;
+    }
+    .is-popped .item-14 {
+        transform: translate(calc(-50% + 20vw), calc(-50% - 8vh)) rotate(-10deg) scale(1);
+        transition-delay: 0.35s;
+    }
+    .is-popped .item-15 {
+        transform: translate(calc(-50% - 60vw), calc(-50% - 22vh)) rotate(30deg) scale(1);
+        transition-delay: 0.375s;
+    }
+    .is-popped .item-16 {
+        transform: translate(calc(-50% + 60vw), calc(-50% - 22vh)) rotate(-30deg) scale(1);
+        transition-delay: 0.4s;
+    }
+    .is-popped .item-17 {
+        transform: translate(calc(-50% - 60vw), calc(-50% - 5vh)) rotate(30deg) scale(1);
+        transition-delay: 0.425s;
+    }
+    .is-popped .item-18 {
+        transform: translate(calc(-50% + 60vw), calc(-50% - 5vh)) rotate(-30deg) scale(1);
+        transition-delay: 0.45s;
+    }
+    .is-popped .item-19 {
+        transform: translate(calc(-50% - 12vw), calc(-50% - 40vh)) rotate(5deg) scale(1);
+        transition-delay: 0.475s;
+    }
+    .is-popped .item-20 {
+        transform: translate(calc(-50% + 12vw), calc(-50% - 40vh)) rotate(-5deg) scale(1);
+        transition-delay: 0.5s;
+    }
+    .is-popped .item-21 {
+        transform: translate(calc(-50% - 12vw), calc(-50% - 12vh)) rotate(5deg) scale(1);
+        transition-delay: 0.525s;
+    }
+    .is-popped .item-22 {
+        transform: translate(calc(-50% + 12vw), calc(-50% - 12vh)) rotate(-5deg) scale(1);
+        transition-delay: 0.55s;
+    }
+    .is-popped .item-23 {
+        transform: translate(calc(-50% - 65vw), calc(-50% - 15vh)) rotate(35deg) scale(1);
+        transition-delay: 0.575s;
+    }
+    .is-popped .item-24 {
+        transform: translate(calc(-50% + 65vw), calc(-50% - 15vh)) rotate(-35deg) scale(1);
+        transition-delay: 0.6s;
+    }
+    .is-popped .item-25 {
+        transform: translate(calc(-50% - 65vw), calc(-50% - 0vh)) rotate(35deg) scale(1);
+        transition-delay: 0.625s;
+    }
+    .is-popped .item-26 {
+        transform: translate(calc(-50% + 65vw), calc(-50% - 0vh)) rotate(-35deg) scale(1);
+        transition-delay: 0.65s;
+    }
+    .is-popped .item-27 {
+        transform: translate(calc(-50% - 35vw), calc(-50% - 38vh)) rotate(20deg) scale(1);
+        transition-delay: 0.675s;
+    }
+    .is-popped .item-28 {
+        transform: translate(calc(-50% + 35vw), calc(-50% - 38vh)) rotate(-20deg) scale(1);
+        transition-delay: 0.7s;
+    }
+    .is-popped .item-29 {
+        transform: translate(calc(-50% - 35vw), calc(-50% - 10vh)) rotate(20deg) scale(1);
+        transition-delay: 0.725s;
+    }
+    .is-popped .item-30 {
+        transform: translate(calc(-50% + 35vw), calc(-50% - 10vh)) rotate(-20deg) scale(1);
+        transition-delay: 0.75s;
+    }
+    .is-popped .item-31 {
+        transform: translate(calc(-50% - 45vw), calc(-50% - 28vh)) rotate(25deg) scale(1);
+        transition-delay: 0.775s;
+    }
+    .is-popped .item-32 {
+        transform: translate(calc(-50% + 48vw), calc(-50% - 32vh)) rotate(-25deg) scale(1);
+        transition-delay: 0.8s;
+    }
+    .is-popped .item-33 {
+        transform: translate(calc(-50% - 38vw), calc(-50% + 20vh)) rotate(20deg) scale(1);
+        transition-delay: 0.825s;
+    }
+    .is-popped .item-34 {
+        transform: translate(calc(-50% + 38vw), calc(-50% + 20vh)) rotate(-20deg) scale(1);
+        transition-delay: 0.85s;
+    }
+    .is-popped .item-35 {
+        transform: translate(calc(-50% - 14vw), calc(-50% - 44vh)) rotate(15deg) scale(1);
+        transition-delay: 0.875s;
+    }
+    .is-popped .item-36 {
+        transform: translate(calc(-50% + 14vw), calc(-50% - 44vh)) rotate(-15deg) scale(1);
+        transition-delay: 0.9s;
+    }
+    .is-popped .item-37 {
+        transform: translate(calc(-50% - 14vw), calc(-50% + 26vh)) rotate(15deg) scale(1);
+        transition-delay: 0.925s;
+    }
+    .is-popped .item-38 {
+        transform: translate(calc(-50% + 14vw), calc(-50% + 26vh)) rotate(-15deg) scale(1);
+        transition-delay: 0.95s;
+    }
+    .is-popped .item-39 {
+        transform: translate(calc(-50% - 72vw), calc(-50% - 22vh)) rotate(40deg) scale(1);
+        transition-delay: 0.975s;
+    }
+    .is-popped .item-40 {
+        transform: translate(calc(-50% + 72vw), calc(-50% - 22vh)) rotate(-40deg) scale(1);
+        transition-delay: 1s;
+    }
+    .is-popped .item-41 {
+        transform: translate(calc(-50% - 72vw), calc(-50% + 18vh)) rotate(40deg) scale(1);
+        transition-delay: 1.025s;
+    }
+    .is-popped .item-42 {
+        transform: translate(calc(-50% + 72vw), calc(-50% + 18vh)) rotate(-40deg) scale(1);
+        transition-delay: 1.05s;
+    }
+    .is-popped .item-43 {
+        transform: translate(calc(-50% - 6vw), calc(-50% - 46vh)) rotate(8deg) scale(1);
+        transition-delay: 1.075s;
+    }
+    .is-popped .item-44 {
+        transform: translate(calc(-50% + 6vw), calc(-50% - 46vh)) rotate(-8deg) scale(1);
+        transition-delay: 1.1s;
+    }
+    .is-popped .item-45 {
+        transform: translate(calc(-50% - 6vw), calc(-50% + 24vh)) rotate(8deg) scale(1);
+        transition-delay: 1.125s;
+    }
+    .is-popped .item-46 {
+        transform: translate(calc(-50% + 6vw), calc(-50% + 24vh)) rotate(-8deg) scale(1);
+        transition-delay: 1.15s;
+    }
+    .is-popped .item-47 {
+        transform: translate(calc(-50% - 24vw), calc(-50% - 44vh)) rotate(12deg) scale(1);
+        transition-delay: 1.175s;
+    }
+    .is-popped .item-48 {
+        transform: translate(calc(-50% + 24vw), calc(-50% - 44vh)) rotate(-12deg) scale(1);
+        transition-delay: 1.2s;
+    }
+    .is-popped .item-49 {
+        transform: translate(calc(-50% - 24vw), calc(-50% + 22vh)) rotate(12deg) scale(1);
+        transition-delay: 1.225s;
+    }
+    .is-popped .item-50 {
+        transform: translate(calc(-50% + 24vw), calc(-50% + 22vh)) rotate(-12deg) scale(1);
+        transition-delay: 1.25s;
+    }
+    .is-popped .item-51 {
+        transform: translate(calc(-50% - 58vw), calc(-50% - 30vh)) rotate(32deg) scale(1);
+        transition-delay: 1.275s;
+    }
+    .is-popped .item-52 {
+        transform: translate(calc(-50% + 58vw), calc(-50% - 30vh)) rotate(-32deg) scale(1);
+        transition-delay: 1.3s;
+    }
+    .is-popped .item-53 {
+        transform: translate(calc(-50% - 58vw), calc(-50% + 20vh)) rotate(32deg) scale(1);
+        transition-delay: 1.325s;
+    }
+    .is-popped .item-54 {
+        transform: translate(calc(-50% + 58vw), calc(-50% + 20vh)) rotate(-32deg) scale(1);
+        transition-delay: 1.35s;
+    }
+    .is-popped .item-55 {
+        transform: translate(calc(-50% - 3vw), calc(-50% - 40vh)) rotate(3deg) scale(1);
+        transition-delay: 1.375s;
+    }
+    .is-popped .item-56 {
+        transform: translate(calc(-50% + 3vw), calc(-50% - 40vh)) rotate(-3deg) scale(1);
+        transition-delay: 1.4s;
+    }
+    .is-popped .item-57 {
+        transform: translate(calc(-50% - 3vw), calc(-50% + 28vh)) rotate(3deg) scale(1);
+        transition-delay: 1.425s;
+    }
+    .is-popped .item-58 {
+        transform: translate(calc(-50% + 3vw), calc(-50% + 28vh)) rotate(-3deg) scale(1);
+        transition-delay: 1.45s;
+    }
+    .is-popped .item-59 {
+        transform: translate(calc(-50% - 28vw), calc(-50% - 42vh)) rotate(18deg) scale(1);
+        transition-delay: 1.475s;
+    }
+    .is-popped .item-60 {
+        transform: translate(calc(-50% + 28vw), calc(-50% - 42vh)) rotate(-18deg) scale(1);
+        transition-delay: 1.5s;
+    }
+    .is-popped .item-61 {
+        transform: translate(calc(-50% - 28vw), calc(-50% + 26vh)) rotate(18deg) scale(1);
+        transition-delay: 1.525s;
+    }
+    .is-popped .item-62 {
+        transform: translate(calc(-50% + 28vw), calc(-50% + 26vh)) rotate(-18deg) scale(1);
+        transition-delay: 1.55s;
+    }
+    .is-popped .item-63 {
+        transform: translate(calc(-50% - 46vw), calc(-50% - 34vh)) rotate(28deg) scale(1);
+        transition-delay: 1.575s;
+    }
+    .is-popped .item-64 {
+        transform: translate(calc(-50% + 46vw), calc(-50% - 34vh)) rotate(-28deg) scale(1);
+        transition-delay: 1.6s;
+    }
+    .is-popped .item-65 {
+        transform: translate(calc(-50% - 46vw), calc(-50% + 22vh)) rotate(28deg) scale(1);
+        transition-delay: 1.625s;
+    }
+    .is-popped .item-66 {
+        transform: translate(calc(-50% + 46vw), calc(-50% + 22vh)) rotate(-28deg) scale(1);
+        transition-delay: 1.65s;
+    }
+    .is-popped .item-67 {
+        transform: translate(calc(-50% - 20vw), calc(-50% - 44vh)) rotate(22deg) scale(1);
+        transition-delay: 1.675s;
+    }
+    .is-popped .item-68 {
+        transform: translate(calc(-50% + 20vw), calc(-50% - 44vh)) rotate(-22deg) scale(1);
+        transition-delay: 1.7s;
+    }
+    .is-popped .item-69 {
+        transform: translate(calc(-50% - 20vw), calc(-50% + 24vh)) rotate(22deg) scale(1);
+        transition-delay: 1.725s;
+    }
+    .is-popped .item-70 {
+        transform: translate(calc(-50% + 20vw), calc(-50% + 24vh)) rotate(-22deg) scale(1);
+        transition-delay: 1.75s;
+    }
+    .is-popped .item-71 {
+        transform: translate(calc(-50% - 66vw), calc(-50% - 26vh)) rotate(38deg) scale(1);
+        transition-delay: 1.775s;
+    }
+    .is-popped .item-72 {
+        transform: translate(calc(-50% + 66vw), calc(-50% - 26vh)) rotate(-38deg) scale(1);
+        transition-delay: 1.8s;
+    }
+    .is-popped .item-73 {
+        transform: translate(calc(-50% - 66vw), calc(-50% + 16vh)) rotate(38deg) scale(1);
+        transition-delay: 1.825s;
+    }
+    .is-popped .item-74 {
+        transform: translate(calc(-50% + 66vw), calc(-50% + 16vh)) rotate(-38deg) scale(1);
+        transition-delay: 1.85s;
+    }
+    .is-popped .item-75 {
+        transform: translate(calc(-50% - 16vw), calc(-50% - 46vh)) rotate(15deg) scale(1);
+        transition-delay: 1.875s;
+    }
+    .is-popped .item-76 {
+        transform: translate(calc(-50% + 16vw), calc(-50% - 46vh)) rotate(-15deg) scale(1);
+        transition-delay: 1.9s;
+    }
+    .is-popped .item-77 {
+        transform: translate(calc(-50% - 40vw), calc(-50% + 18vh)) rotate(30deg) scale(1);
+        transition-delay: 1.925s;
+    }
+
+    .is-popped .mePhoto {
+        transform: rotate(0deg) scale(1.1);
+        border-color: #ff85a1;
+    }
+
+    @media(max-width: 768px) {
+        .photo-caption{
+            position: static;
+            width: auto;
+            right: 0;
+            transform: rotate(0deg);
+            margin-top:10px;
+        }
+        .curved-arrow{
+            display: none;
+        }
+        
+        /* Scale down sizes on mobile but still bigger */
+        .pop-item.item-1 img,
+        .pop-item.item-2 img,
+        .pop-item.item-3 img,
+        .pop-item.item-4 img,
+        .pop-item.item-5 img,
+        .pop-item.item-6 img {
+            width: 180px;
+            height: 180px;
+        }
+        
+        .pop-item.size-medium img {
+            width: 130px;
+            height: 130px;
+        }
+        
+        .pop-item.size-small img {
+            width: 95px;
+            height: 95px;
+        }
+        
+        /* Adjust positioning for smaller screens - keep away from text area */
+        .is-popped .item-1 { 
+            transform: translate(calc(-50% - 35vw), calc(-50% - 18vh)) rotate(-20deg) scale(1); 
+        }
+        .is-popped .item-2 { 
+            transform: translate(calc(-50% + 35vw), calc(-50% - 18vh)) rotate(20deg) scale(1); 
+        }
+        .is-popped .item-3 { 
+            transform: translate(calc(-50% - 35vw), calc(-50% - 4vh)) rotate(20deg) scale(1); 
+        }
+        .is-popped .item-4 { 
+            transform: translate(calc(-50% + 35vw), calc(-50% - 4vh)) rotate(-20deg) scale(1); 
+        }
+        .is-popped .item-5 { 
+            transform: translate(calc(-50% - 25vw), calc(-50% - 28vh)) rotate(-10deg) scale(1); 
+        }
+        .is-popped .item-6 {
+            transform: translate(calc(-50% + 25vw), calc(-50% - 28vh)) rotate(-10deg) scale(1);
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const photo = document.getElementById('main-photo');
+        const section = document.querySelector('.meSection');
+
+        // Preload all images for smooth animation
+        const imageSources = [
+            document.querySelector('.item-1 img')?.src,
+            document.querySelector('.item-2 img')?.src,
+            document.querySelector('.item-3 img')?.src,
+            document.querySelector('.item-4 img')?.src,
+            document.querySelector('.item-5 img')?.src,
+            document.querySelector('.item-6 img')?.src,
+            document.querySelector('.item-7 img')?.src,
+            document.querySelector('.item-8 img')?.src,
+            document.querySelector('.item-9 img')?.src,
+            document.querySelector('.item-10 img')?.src,
+            document.querySelector('.item-11 img')?.src,
+            document.querySelector('.item-12 img')?.src,
+            document.querySelector('.item-13 img')?.src,
+            document.querySelector('.item-14 img')?.src,
+            document.querySelector('.item-15 img')?.src,
+            document.querySelector('.item-16 img')?.src,
+            document.querySelector('.item-17 img')?.src,
+            document.querySelector('.item-18 img')?.src,
+            document.querySelector('.item-19 img')?.src,
+            document.querySelector('.item-20 img')?.src,
+            document.querySelector('.item-21 img')?.src,
+            document.querySelector('.item-22 img')?.src,
+            document.querySelector('.item-23 img')?.src,
+            document.querySelector('.item-24 img')?.src,
+            document.querySelector('.item-25 img')?.src,
+            document.querySelector('.item-26 img')?.src,
+            document.querySelector('.item-27 img')?.src,
+            document.querySelector('.item-28 img')?.src,
+            document.querySelector('.item-29 img')?.src,
+            document.querySelector('.item-30 img')?.src,
+            document.querySelector('.item-31 img')?.src,
+            document.querySelector('.item-32 img')?.src,
+            document.querySelector('.item-33 img')?.src,
+            document.querySelector('.item-34 img')?.src,
+            document.querySelector('.item-35 img')?.src,
+            document.querySelector('.item-36 img')?.src,
+            document.querySelector('.item-37 img')?.src,
+            document.querySelector('.item-38 img')?.src,
+            document.querySelector('.item-39 img')?.src,
+            document.querySelector('.item-40 img')?.src,
+            document.querySelector('.item-41 img')?.src,
+            document.querySelector('.item-42 img')?.src,
+            document.querySelector('.item-43 img')?.src,
+            document.querySelector('.item-44 img')?.src,
+            document.querySelector('.item-45 img')?.src,
+            document.querySelector('.item-46 img')?.src,
+            document.querySelector('.item-47 img')?.src,
+            document.querySelector('.item-48 img')?.src,
+            document.querySelector('.item-49 img')?.src,
+            document.querySelector('.item-50 img')?.src,
+            document.querySelector('.item-51 img')?.src,
+            document.querySelector('.item-52 img')?.src,
+            document.querySelector('.item-53 img')?.src,
+            document.querySelector('.item-54 img')?.src,
+            document.querySelector('.item-55 img')?.src,
+            document.querySelector('.item-56 img')?.src,
+            document.querySelector('.item-57 img')?.src,
+            document.querySelector('.item-58 img')?.src,
+            document.querySelector('.item-59 img')?.src,
+            document.querySelector('.item-60 img')?.src,
+            document.querySelector('.item-61 img')?.src,
+            document.querySelector('.item-62 img')?.src,
+            document.querySelector('.item-63 img')?.src,
+            document.querySelector('.item-64 img')?.src,
+            document.querySelector('.item-65 img')?.src,
+            document.querySelector('.item-66 img')?.src,
+            document.querySelector('.item-67 img')?.src,
+            document.querySelector('.item-68 img')?.src,
+            document.querySelector('.item-69 img')?.src,
+            document.querySelector('.item-70 img')?.src,
+            document.querySelector('.item-71 img')?.src,
+            document.querySelector('.item-72 img')?.src,
+            document.querySelector('.item-73 img')?.src,
+            document.querySelector('.item-74 img')?.src,
+            document.querySelector('.item-75 img')?.src,
+            document.querySelector('.item-76 img')?.src,
+            document.querySelector('.item-77 img')?.src,
+        ].filter(Boolean);
+
+        // Preload images
+        imageSources.forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
+
+        if (photo && section) {
+            photo.addEventListener('click', () => {
+                section.classList.toggle('is-popped');
+            });
+        }
+    });
+</script>
