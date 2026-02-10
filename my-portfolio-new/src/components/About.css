@@ -1,0 +1,166 @@
+.about-page {
+    min-height: 100vh;
+    background-color: #fff0f5; 
+    position: relative;
+    padding: 2rem 1rem;
+}
+
+.about-page::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/aura.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.3;
+    filter: blur(20px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 3rem;
+    background-color: rgba(255, 250, 240, 0.85);
+    border-radius: 30px;
+    padding: 3rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.about-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.about-text h1 {
+    color: purple;
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin: 0 0 1.5rem 0;
+    font-family: 'Pinyon Script', cursive;
+    line-height: 1.2;
+}
+
+.about-text p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: 400;
+    color: #333;
+    line-height: 1.8;
+    margin: 0 0 1.5rem 0;
+}
+
+.about-text p.connect {
+    margin-top: 2rem;
+    font-size: clamp(1rem, 2vw, 1.1rem);
+}
+
+.about-text .underline {
+    text-decoration: underline wavy purple;
+    text-underline-offset: 4px;
+    color: purple;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.about-text .underline:hover {
+    color: #ff69b4;
+}
+
+.about-text a {
+    color: purple;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.about-text a:hover {
+    color: #ff69b4;
+}
+
+.about-image {
+    flex-shrink: 0;
+    width: 350px;
+    max-width: 100%;
+}
+
+.about-image .me {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    border: 15px dashed pink;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+    transform: rotate(-2deg);
+    transition: transform 0.3s ease;
+}
+
+.about-image .me:hover {
+    transform: rotate(0deg) scale(1.02);
+}
+
+.auto-type {
+    color: #ff69b4;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .about-image {
+        width: 100%;
+        max-width: 400px;
+        order: -1;
+    }
+
+    .about-text {
+        text-align: center;
+    }
+
+    .about-text h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 640px) {
+    .about-page {
+        padding: 1rem 0.5rem;
+    }
+
+    .about-container {
+        padding: 1rem 0;
+    }
+
+    .about-content {
+        padding: 1.5rem;
+        border-radius: 20px;
+    }
+
+    .about-image {
+        max-width: 300px;
+    }
+
+    .about-image .me {
+        border-width: 10px;
+        border-radius: 20px;
+    }
+
+    .about-text p {
+        text-align: left;
+    }
+}

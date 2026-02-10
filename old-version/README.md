@@ -6,6 +6,7 @@ PLANNING:
 popup icons: hackclub, running/track related thing, techfluences logo, thli, art/creative thing, research thing, google codenext, family/friends, and lots of cute emojis
 
 TO-DO:
+- add fonts, add bead border back???
 - navbar: links to reacvh section, icons to connect to me (email, linkiedin, jithub, resume)
 - 1st section: welcome to my corner - when u click on my picture it should shoot out other pictures including hack club, 
 - projects section: like a cool cyberpunk/techy code backgorund and then each projects smylbol coming out
