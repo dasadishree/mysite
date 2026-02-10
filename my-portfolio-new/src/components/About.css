@@ -217,10 +217,11 @@
     transform: rotate(0deg) scale(1.02);
 }
 
+
 /* type effect */
 .typing-text {
     margin-top: 1.5rem;
-    text-align: center;
+    text-align: left;
     font-family: 'Courier New', 'Monaco', monospace;
     font-size: clamp(1.2rem, 2.5vw, 1.8rem);
     font-weight: 600;
@@ -266,6 +267,9 @@
     .about-text h1 {
         text-align: center;
     }
+    .typing-text {
+        text-align: center;
+    }
 }
 @media (max-width: 640px) {
     .about-page {
@@ -288,4 +292,34 @@
     .about-text p {
         text-align: left;
     }
+    .stamp-card {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: rotate(45deg);
+        width: 250px;
+        max-width: 80vw;
+        margin: 2rem auto 0;
+    }
+}
+
+.stamp-card {
+    position: absolute;
+    top: 50vh;
+    right: 5vw;
+    transform: translateY(-50%) rotate(-45deg);
+    width: 100vw;
+    max-width: 30vw;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.stamp-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+    display: block;
+    filter: drop-shadow(0 0 20px rgba(255, 20, 147, 0.3));
 }
