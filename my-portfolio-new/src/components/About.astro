@@ -60,29 +60,37 @@ import "./About.css";
         <div class="heart">♥</div>
     </div>
     <div class="about-container">
-        <div class="about-content">
-            <div class="about-text">
-                <h1>hi! i'm adishree das!</h1>
-                <p>
-                    I'm a highschool junior passionate about using technology & business for societal impact! I hope to make tech/STEM more accessible for all regardless of gender, physical ability, etc.
-                    My interests include technology (especially artificial intelligence and human-computer interaction), business/entrepreneurship, behavioral science, and UI/UX design.
-                    For fun, I spend my time coding
-                    <a href="/projects" class="underline">personal projects</a>
-                    , going on lots of 
-                    <a href="/experiences" class="underline">side quests</a>
-                    , running, reading, and watching Netflix!
-                </p>
-                <div class="typing-text">
-                    <span class="typing-label">fun fact: </span><span class="auto-type"></span>
+        <div class="flip-card" id="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <div class="about-content">
+                        <div class="about-text">
+                            <h1>hi! i'm adishree das!</h1>
+                            <p>
+                                I'm a highschool junior passionate about using technology & business for societal impact! I hope to make tech/STEM more accessible for all regardless of gender, physical ability, etc.
+                                My interests include technology (especially artificial intelligence and human-computer interaction), business/entrepreneurship, behavioral science, and UI/UX design.
+                                For fun, I spend my time coding
+                                <a href="/projects" class="underline">personal projects</a>
+                                , going on lots of 
+                                <a href="/experiences" class="underline">side quests</a>
+                                , running, reading, and watching Netflix!
+                            </p>
+                            <div class="typing-text">
+                                <span class="typing-label">fun fact: </span><span class="auto-type"></span>
+                            </div>
+                        </div>
+                        <div class="about-image">
+                            <img class="me" src={meImage.src} alt="photo of me!">
+                        </div>
+                    </div>
+                </div>
+                <div class="flip-card-back">
+                    <div class="stamp-card">
+                        <img src={frontStampCard.src} alt="Front stamp card">
+                    </div>
                 </div>
             </div>
-            <div class="about-image">
-                <img class="me" src={meImage.src} alt="photo of me!">
-            </div>
         </div>
-    </div>
-    <div class="stamp-card">
-        <img src={frontStampCard.src} alt="Front stamp card">
     </div>
 </div>
 
