@@ -2,7 +2,7 @@
     min-height: 100vh;
     background-color: #fff0f5; 
     position: relative;
-    padding: 2vh 1vw;
+    padding: 2rem 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -139,72 +139,24 @@
     pointer-events: none;
 }
 .about-container {
-    max-width: 70vw;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 2vh 0;
+    padding: 2rem 0;
     position: relative;
     z-index: 1;
-    perspective: 1000px;
 }
-
-/* flip card */
-.flip-card {
-    width: 100%;
-    position: relative;
-    cursor: pointer;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-}
-
-.flip-card.flipped {
-    transform: rotateY(180deg);
-}
-
-.flip-card-inner {
-    position: relative;
-    width: 100%;
-    transform-style: preserve-3d;
-}
-
-.flip-card-front {
-    position: relative;
-    width: 100%;
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-}
-
-.flip-card-back {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    transform: rotateY(180deg);
-    backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 250, 240, 0.9);
-    border-radius: 2vw;
-    padding: 3vh 3vw;
-    box-shadow: 0 1vh 4vh rgba(0, 0, 0, 0.15), 0 0 3vh rgba(255, 20, 147, 0.1);
-    backdrop-filter: blur(10px);
-}
-
 .about-content {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 3vw;
+    gap: 3rem;
     background-color: rgba(255, 250, 240, 0.9);
-    border-radius: 2vw;
-    padding: 3vh 3vw;
-    box-shadow: 0 1vh 4vh rgba(0, 0, 0, 0.15), 0 0 3vh rgba(255, 20, 147, 0.1);
+    border-radius: 30px;
+    padding: 3rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15), 0 0 30px rgba(255, 20, 147, 0.1);
     backdrop-filter: blur(10px);
     position: relative;
     z-index: 2;
-    pointer-events: auto;
 }
 .about-text {
     flex: 1;
@@ -213,19 +165,19 @@
 .about-text h1 {
     color: purple;
     font-size: clamp(2rem, 5vw, 3.5rem);
-    margin: 7.5vh 0 1.5vh 0;
+    margin: 0 0 1.5rem 0;
     font-family: 'Pinyon Script', cursive;
     line-height: 1.2;
 }
 .about-text p {
-    font-size: clamp(1.5rem, 2vw, 1.2rem);
+    font-size: clamp(1rem, 2vw, 1.2rem);
     font-weight: 400;
     color: #333;
     line-height: 1.8;
-    margin: 0 0 5vh 0;
+    margin: 0 0 1.5rem 0;
 }
 .about-text p.connect {
-    margin-top: 2vh;
+    margin-top: 2rem;
     font-size: clamp(1rem, 2vw, 1.1rem);
 }
 .about-text .underline {
@@ -248,15 +200,15 @@
 }
 .about-image {
     flex-shrink: 0;
-    width: 20vw;
+    width: 350px;
     max-width: 100%;
 }
 .about-image .me {
     width: 100%;
     height: auto;
-    border-radius: 2vw;
-    border: 1vh dashed pink;
-    box-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.15);
+    border-radius: 30px;
+    border: 15px dashed pink;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     object-fit: cover;
     transform: rotate(-2deg);
     transition: transform 0.3s ease;
@@ -265,17 +217,16 @@
     transform: rotate(0deg) scale(1.02);
 }
 
-
 /* type effect */
 .typing-text {
-    margin-top: 1.5vh;
+    margin-top: 1.5rem;
     text-align: left;
     font-family: 'Courier New', 'Monaco', monospace;
     font-size: clamp(1.2rem, 2.5vw, 1.8rem);
     font-weight: 600;
     color: #ff1493;
-    letter-spacing: 0.2vw;
-    min-height: 2.5vh;
+    letter-spacing: 2px;
+    min-height: 2.5rem;
 }
 .typing-label {
     color: #8b008b;
@@ -296,17 +247,161 @@
     51%, 100% { opacity: 0; }
 }
 
+/* achievements link*/
+.achievements-link {
+    margin-top: 1.5rem;
+    background: none;
+    border: none;
+    color: purple;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-family: 'Pinyon Script', cursive;
+    text-decoration: underline wavy purple;
+    text-underline-offset: 4px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.achievements-link:hover {
+    color: #ff69b4;
+}
+
+/* popup */
+.popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.popup-overlay.active {
+    display: flex;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.popup-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90vh;
+    background-color: rgba(255, 250, 240, 0.95);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.popup-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: purple;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    z-index: 1001;
+}
+
+.popup-close:hover {
+    color: #ff69b4;
+    background-color: rgba(255, 20, 147, 0.1);
+    transform: rotate(90deg);
+}
+
+/* stamp card flip */
+.stamp-card-flip {
+    position: relative;
+    width: 100%;
+    max-width: 200vw;
+    height: auto;
+    perspective: 1000px;
+}
+
+.stamp-card-front,
+.stamp-card-back {
+    position: relative;
+    width: 100%;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.stamp-card-front {
+    transform: rotateY(0deg);
+}
+
+.stamp-card-back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg);
+}
+
+.stamp-card-flip.flipped .stamp-card-front {
+    transform: rotateY(-180deg);
+}
+
+.stamp-card-flip.flipped .stamp-card-back {
+    transform: rotateY(0deg);
+}
+
+.stamp-card-image {
+    max-width: 100%;
+    max-height: 85vh;
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+    display: block;
+}
+
 /* responsive */
 @media (max-width: 968px) {
     .about-content {
         flex-direction: column;
         align-items: center;
-        gap: 2vh;
-        padding: 2vh 2vw;
+        gap: 2rem;
+        padding: 2rem;
     }
     .about-image {
         width: 100%;
-        max-width: 40vw;
+        max-width: 400px;
         order: -1;
     }
     .about-text {
@@ -318,63 +413,26 @@
     .typing-text {
         text-align: center;
     }
-    .flip-card-back {
-        padding: 2vh 2vw;
-    }
-    .stamp-card img {
-        transform: rotate(90deg);
-        max-width: 80vh;
-        max-height: 80vw;
-    }
 }
 @media (max-width: 640px) {
     .about-page {
-        padding: 1vh 1vw;
+        padding: 1rem 0.5rem;
     }
     .about-container {
-        padding: 1vh 0;
+        padding: 1rem 0;
     }
     .about-content {
-        padding: 1.5vh 1.5vw;
-        border-radius: 2vw;
-    }
-    .flip-card-back {
-        padding: 1.5vh 1.5vw;
-        border-radius: 2vw;
+        padding: 1.5rem;
+        border-radius: 20px;
     }
     .about-image {
-        max-width: 50vw;
+        max-width: 300px;
     }
     .about-image .me {
-        border-width: 0.8vh;
-        border-radius: 2vw;
+        border-width: 10px;
+        border-radius: 20px;
     }
     .about-text p {
         text-align: left;
     }
-    .stamp-card img {
-        transform: rotate(90deg);
-        max-width: 70vh;
-        max-height: 70vw;
-    }
-}
-
-.stamp-card {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.stamp-card img {
-    width: 100%;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 1.5vw;
-    box-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.2);
-    object-fit: contain;
-    display: block;
-    filter: drop-shadow(0 0 2vh rgba(255, 20, 147, 0.3));
 }
