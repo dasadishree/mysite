@@ -471,21 +471,6 @@ h1{
         transform: translate(calc(-50% + 55vw), calc(-50% - 0vh)) rotate(-35deg) scale(1);
     }
     
-    .nav-links {
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 20px;
-        width: 100%;
-        max-width: 300px;
-    }
-    
-    .nav-btn {
-        font-size: clamp(1rem, 4vw, 1.3rem);
-        padding: 12px 20px;
-        width: 100%;
-        text-align: center;
-    }
-    
     .loading-text {
         font-size: 1.5rem;
     }
@@ -632,7 +617,7 @@ h1{
     margin-top: 40px;
 }
 .nav-btn{
-    /* font-family: ; i will pick a cute handwriti
+    /* font-family: ; i will pick a cute handwriting google font*/ 
     font-size: 1.5rem;
     text-decoration: none;
     padding: 10px 25px;

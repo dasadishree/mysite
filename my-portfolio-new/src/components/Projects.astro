@@ -1,6 +1,24 @@
 ---
 import "./Projects.css";
 import bg1 from '../assets/bg2.jpeg';
+import projectsData from '../data/projects.json';
+import beyondthebox from '../assets/beyondthebox.png';
+import google from '../assets/google.png';
+import ipmd from '../assets/ipmd.jpg';
+import trophy from '../assets/trophy.png';
+import voctab from '../assets/voctab.png';
+import techfluences from '../assets/techfluences.png';
+import sustainabite from '../assets/sustainabite.png';
+
+const projectImages = {
+    'beyondthebox': beyondthebox,
+    'google': google,
+    'ipmd': ipmd,
+    'trophy': trophy,
+    'voctab': voctab,
+    'techfluences': techfluences,
+    'sustainabite': sustainabite
+};
 ---
 
 <div class="projects-section" id="projects">
@@ -9,30 +27,47 @@ import bg1 from '../assets/bg2.jpeg';
         <h1>my projects</h1>
     </div>
     <div class="projectImages">
-        <img alt="PetalPal">
-        <img alt="Soliss">
-        <img alt="Stampd">
-        <img alt="Lookaluxe">
-        <img alt="Voctab">
-        <img alt="EchoAI">    
-        <img alt="Lighter">
-        <img alt="Ovra">
-        <img alt="Beyond The Box">
-        <img alt="Stemiverse">
-        <img alt="Skinfluence LI">
-        <img alt="Sustainabite">
-        <img alt="Techfluences CTF Bot">
-        <img alt="Google iOS Accessibility">
-        <img alt="Echo">
-        <img alt="Sea The Change">
-        <img alt="The Dialectic">
-        <img alt="Techfluences">
-        <img alt="Frostly Delights">
-        <img alt="Planetopia">
-        <img alt="Flickflow">
-        <img alt="Skyglider">
+        {projectsData.projects.map((project) => {
+            const projectImage = projectImages[project.id];
+            if (!projectImage) return null;
+            return (
+                <div 
+                    class="project-item" 
+                    data-project-id={project.id}
+                    data-project-data={JSON.stringify(project)}
+                >
+                    <img src={projectImage.src} alt={project.header || project.name} />
+                </div>
+            );
+        })}
     </div>
-    //other stuff: gwc sustainaiility thing, nyjos research, rutgers research, gtech research, khan academty vid thing, etc
-    //experiences: Google Launch, Daydream, Google CodeNext, Cornell HS, LLS, Techfluences, Rutgers, GTech, Parthenon, Ascend, THLI, PennApps, Marathon, GWC, NCWIT
-    //see more official qualifications/experience on resume (internships, volunteering, research, awards, leadership)
 </div>
+
+<!-- project popup -->
+<div class="project-popup-overlay" id="project-popup-overlay">
+    <div class="project-popup-content">
+        <button class="project-popup-close" id="project-popup-close">&times;</button>
+        <div class="project-popup-header" id="project-popup-header"></div>
+        <div class="project-slides-container">
+            <div class="project-slide" id="project-slide">
+                <div class="project-slide-left">
+                    <img id="project-slide-image" src="" alt="Project image">
+                </div>
+                <div class="project-slide-right">
+                    <h2 class="project-subheading" id="project-subheading"></h2>
+                    <p class="project-description" id="project-description"></p>
+                    <div class="project-links" id="project-links"></div>
+                </div>
+            </div>
+        </div>
+        <div class="project-slide-controls">
+            <button class="project-slide-btn project-prev-btn" id="project-prev-btn">‹</button>
+            <span class="project-slide-indicator" id="project-slide-indicator">1 / 1</span>
+            <button class="project-slide-btn project-next-btn" id="project-next-btn">›</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    import "./Projects.js";
+</script>

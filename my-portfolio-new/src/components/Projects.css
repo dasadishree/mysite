@@ -37,6 +37,327 @@
     pointer-events: none;
 }
 
+/* Project Images Grid */
+.projectImages {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.project-item {
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    pointer-events: auto;
+}
+
+/* Position the 7 projects without overlap, avoiding center area (40-60% vertical, 35-65% horizontal) where "my projects" text is */
+/* Using more spread out positions to ensure no overlap */
+.project-item[data-project-id="beyondthebox"] { 
+    top: 5%; 
+    left: 2%; 
+    width: 150px; 
+    height: 150px; 
+}
+.project-item[data-project-id="google"] { 
+    top: 5%; 
+    right: 2%; 
+    width: 150px; 
+    height: 150px; 
+}
+.project-item[data-project-id="ipmd"] { 
+    top: 18%; 
+    left: 1%; 
+    width: 150px; 
+    height: 150px; 
+}
+.project-item[data-project-id="trophy"] { 
+    top: 22%; 
+    right: 5%; 
+    width: 150px; 
+    height: 150px; 
+}
+.project-item[data-project-id="voctab"] { 
+    bottom: 12%; 
+    left: 2%; 
+    width: 150px; 
+    height: 150px; 
+}
+.project-item[data-project-id="techfluences"] { 
+    bottom: 15%; 
+    right: 1%; 
+    width: 150px; 
+    height: 150px; 
+}
+.project-item[data-project-id="sustainabite"] { 
+    top: 68%; 
+    left: 30%; 
+    width: 150px; 
+    height: 150px; 
+}
+
+.project-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    display: block;
+}
+
+.project-item[data-project-id="beyondthebox"] img { transform: rotate(-5deg); }
+.project-item[data-project-id="google"] img { transform: rotate(8deg); }
+.project-item[data-project-id="ipmd"] img { transform: rotate(-10deg); }
+.project-item[data-project-id="trophy"] img { transform: rotate(12deg); }
+.project-item[data-project-id="voctab"] img { transform: rotate(-8deg); }
+.project-item[data-project-id="techfluences"] img { transform: rotate(5deg); }
+.project-item[data-project-id="sustainabite"] img { transform: rotate(-7deg); }
+
+.project-item:hover {
+    z-index: 15;
+}
+
+.project-item[data-project-id="beyondthebox"]:hover img { transform: rotate(-5deg) scale(1.1); }
+.project-item[data-project-id="google"]:hover img { transform: rotate(8deg) scale(1.1); }
+.project-item[data-project-id="ipmd"]:hover img { transform: rotate(-10deg) scale(1.1); }
+.project-item[data-project-id="trophy"]:hover img { transform: rotate(12deg) scale(1.1); }
+.project-item[data-project-id="voctab"]:hover img { transform: rotate(-8deg) scale(1.1); }
+.project-item[data-project-id="techfluences"]:hover img { transform: rotate(5deg) scale(1.1); }
+.project-item[data-project-id="sustainabite"]:hover img { transform: rotate(-7deg) scale(1.1); }
+
+.project-item:hover img {
+    outline: 4px solid #ff69b4;
+    outline-offset: 4px;
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.6);
+}
+
+.project-popup-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+.project-popup-overlay.active {
+    display: flex;
+    animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.project-popup-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 90vh;
+    width: 900px;
+    background-color: rgba(255, 250, 240, 0.95);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.3s ease;
+    overflow-y: auto;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.project-popup-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2.5rem;
+    color: purple;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    z-index: 1001;
+}
+
+.project-popup-close:hover {
+    color: #ff69b4;
+    background-color: rgba(255, 20, 147, 0.1);
+    transform: rotate(90deg);
+}
+
+.project-popup-header {
+    font-family: 'Pinyon Script', cursive;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: purple;
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid rgba(255, 105, 180, 0.3);
+}
+
+.project-slides-container {
+    margin-bottom: 2rem;
+}
+
+.project-slide {
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.project-slide-left {
+    flex-shrink: 0;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-slide-left img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+}
+
+.project-slide-right {
+    flex: 1;
+}
+
+.project-subheading {
+    font-family: 'Pinyon Script', cursive;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    color: #ff1493;
+    margin: 0 0 1rem 0;
+}
+
+.project-description {
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    color: #333;
+    line-height: 1.8;
+    margin: 0 0 1.5rem 0;
+}
+
+.project-links {
+    margin-top: 1.5rem;
+}
+
+.project-links-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid;
+}
+
+.project-link-deploy {
+    background-color: #ff69b4;
+    color: white;
+    border-color: #ff69b4;
+}
+
+.project-link-deploy:hover {
+    background-color: #ff1493;
+    border-color: #ff1493;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 20, 147, 0.4);
+}
+
+.project-link-code {
+    background-color: transparent;
+    color: #ff69b4;
+    border-color: #ff69b4;
+}
+
+.project-link-code:hover {
+    background-color: #ff69b4;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+}
+
+.project-slide-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 2px solid rgba(255, 105, 180, 0.3);
+}
+
+.project-slide-btn {
+    background: none;
+    border: 2px solid #ff69b4;
+    color: #ff69b4;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-slide-btn:hover:not(:disabled) {
+    background-color: #ff69b4;
+    color: white;
+    transform: scale(1.1);
+}
+
+.project-slide-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.project-slide-indicator {
+    font-size: 1.2rem;
+    color: purple;
+    font-weight: 600;
+}
+
 @media (max-width: 768px) {
     .cyberImage {
         height: 40vh;
@@ -45,5 +366,42 @@
     
     .cyberImage h1 {
         font-size: clamp(2.5rem, 10vw, 5rem);
+    }
+    
+    .projectImages {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 15px;
+        padding: 1rem;
+    }
+    
+    .project-item {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .project-popup-content {
+        width: 95%;
+        padding: 1.5rem;
+    }
+    
+    .project-slide {
+        flex-direction: column;
+    }
+    
+    .project-slide-left {
+        width: 100%;
+    }
+    
+    .project-slide-left img {
+        max-height: 300px;
+    }
+    
+    .project-links-container {
+        justify-content: center;
+    }
+    
+    .project-link {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
     }
 }

@@ -1,0 +1,193 @@
+{
+  "projects": [
+    {
+      "id": "google",
+      "image": "google.png",
+      "header": "Google Code Next",
+      "slides": [
+        {
+          "subheading": "Petal Pal (Google Code Next LauncH)",
+          "description": "Entrepreneurship/project development summer program where we made a smartpot and a companion app.",
+          "deployLink": "",
+          "codeLink": "",
+          "image": "petalpal.png"
+        },
+        {
+          "subheading": "Lookaluxe (Google Code Next iOS Development Workshop)",
+          "description": "An app that finds cheap alternatives to luxury items on the internet",
+          "deployLink": "",
+          "codeLink": "",
+          "image": "lookaluxe.png"
+        },
+        {
+          "subheading": "iOS Accessibility Research & Development",
+          "description": "Made an educational platform/resource for developer awareness of how to integrate iOS accessibility tools into projects",
+          "deployLink": "",
+          "codeLink": "",
+          "image": "iosaccessibility.png"
+        },
+        {
+          "subheading": "Stampd",
+          "description": "An digitalized loyalty card platform with data analytics for businesses and customers.",
+          "deployLink": "",
+          "codeLink": "",
+          "image": "stampd.png"
+        } 
+      ]
+    },
+    {
+      "id": "trophy",
+      "image": "trophy.png",
+      "header": "Hackathons",
+      "slides": [
+        {
+          "subheading": "Soliss (PennApps)",
+          "description": "Wearable UV sensor with a companion app",
+          "deployLink": "",
+          "codeLink": "",
+          "image": "soliss.png"
+        },
+        {
+          "subheading": "Planetopia (Ascend)",
+          "description": "A fun design-your-own planet game that won the Most Creative Superlative!",
+          "deployLink": "",
+          "codeLink": "",
+          "image": "planetopia.png"
+        },
+        {
+          "subheading": "Stampd (Hack MHS)",
+          "description": "An digitalized loyalty card platform with data analytics for businesses and customers.",
+          "deployLink": "",
+          "codeLink": "",
+          "image": "stampd.png"
+        },
+        {
+            "subheading": "Flickflow (TeenhacksLI Jan 2024)",
+            "description": "A hands-free scrolling solution",
+            "deployLink": "",
+            "codeLink": "",
+            "image": "flickflow.png"
+        },
+        {
+            "subheading": "Skyglider (Counterspell)",
+            "description": "A infinite game controlling a glider through obstacles",
+            "deployLink": "",
+            "codeLink": "",
+            "image": "skyglider.png"
+        }
+      ]
+    },
+    {
+      "id": "sustainabite",
+      "image": "sustainabite.png",
+      "header": "New York Junior Academy of Sciences: Sustainabite",
+      "slides": [
+        {
+          "subheading": "Sustainabite (Project of Distinction)",
+          "description": "Help combat food waste by redistrubting food waste from homes, resteraunts, and buildings to people in need",
+          "deployLink": "",
+          "codeLink": "",
+          "image": "sustainabite.png"
+        }
+      ]
+    },
+    {
+      "id": "beyondthebox",
+      "image": "beyondthebox.png",
+      "header": "Beyond The Box: Presidential AI Challenge",
+      "slides": [
+        {
+          "subheading": "Beyond The Box",
+          "description": "Explain health impacts of ingredients in ingredient lists in a clear way using AI",
+          "deployLink": "",
+          "codeLink": "",
+          "image": "beyondthebox.png"
+        }
+      ]
+    },
+    {
+      "id": "ipmd",
+      "image": "ipmd.jpg",
+      "header": "EchoAI (IPMD)",
+      "slides": [
+        {
+          "subheading": "EchoAI",
+          "description": "An AI model that can recognize, distinguish and greet people based on their voice.",
+          "deployLink": "",
+          "codeLink": "",
+          "image": "ipmd.png"
+        }
+      ]
+    },
+    {
+      "id": "voctab",
+      "image": "voctab.png",
+      "header": "Voctab",
+      "slides": [
+        {
+          "subheading": "Vocab",
+          "description": "Practice vocabulary flashcards with every new tab",
+          "deployLink": "",
+          "codeLink": "",
+          "image": "voctab.png"
+        }
+      ]
+    },
+    {
+      "id": "techfluences",
+      "image": "techfluences.png",
+      "header": "Techfluences",
+      "slides": [
+        {
+          "subheading": "Techfluences Website",
+          "description": "Our organization's main website!",
+          "deployLink": "",
+          "codeLink": "",
+          "image": "techfluences.png"
+        },
+        {
+          "subheading": "Capture-The-Flag bot",
+          "description": "A bot that helps moderate/manage a cybersecurity competition via Discord for participants.",
+          "deployLink": "",
+          "codeLink": "",
+          "image": "ctf.png"
+        },
+        {
+          "subheading": "Ovra Website",
+          "description": "A website for a partner, Ovra, a youth organization for women's menstrual health.",
+          "deployLink": "",
+          "codeLink": "",
+          "image": "ovra.png"
+        },
+        {
+          "subheading": "SkinfluenceLI Website",
+          "description": "A website for a partner, SkinfluenceLI, a youth organization for skin health and dermatology",
+          "deployLink": "",
+          "codeLink": "",
+          "image": "skinfluence.png"
+        },
+        {
+          "subheading": "Sea The Change Website",
+          "description": "A website for a partner, Sea The Change, a youth organization for a sea, environment, and animal rights",
+          "deployLink": "",
+          "codeLink": "",
+          "image": "seathechange.png"
+        },
+        {
+          "subheading": "Dialectic Website",
+          "description": "A website for a partner, Dialectic, a youth newspaper and debate",
+          "deployLink": "",
+          "codeLink": "",
+          "image": "dialectic.png"
+        },
+        {
+          "subheading": "Stemiverse Website",
+          "description": "A website for a partner, Stemiverse, a youth organization for STEM education",
+          "deployLink": "",
+          "codeLink": "",
+          "image": "stemiverse.png"
+        }
+      ]
+    }
+  ]
+}
