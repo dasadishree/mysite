@@ -2,10 +2,10 @@
 view at dasadishree.me
 
 TO-DO:
-- add fonts, add bead border back???
-- navbar: links to reacvh section, icons to connect to me (email, linkiedin, jithub, resume)
-- projects section: like a cool cyberpunk/techy code backgorund and then each projects smylbol coming out
-- experiences section: hackathons, summer programs etc
+- make projects not overlapping and not cropped weird
+- add missing images
+- experiences section: hackathons, summer programs etc w fun images
+(pennapps, parthenon, ascend, hackmhs, thli, ncwit, rutgers, nyjos, gtech, google, LLS)
 - cool interactive backgtorund would be nice, make elements slightly move so tyhat it seems more interacrtve
 
 INSPO:
