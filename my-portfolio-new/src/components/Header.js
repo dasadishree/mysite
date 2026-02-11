@@ -1,4 +1,20 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const href = this.getAttribute('href');
+            if (href !== '#' && href.length > 1) {
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            }
+        });
+    });
     const loadingScreen = document.getElementById('loading-screen');
     const mainContent = document.getElementById('main-content');
     const photo = document.getElementById('main-photo');
@@ -28,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         loadingScreen.classList.add('hidden');
         mainContent.style.display = 'block';
         setTimeout(() => {
-            loadingScreen.style.display = 'block';
+            loadingScreen.style.display = 'none';
         }, 500);
     }
     allImages.forEach(src => {

@@ -5,6 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
+    width: 100%;
 } 
 .container{
     display: flex;
@@ -72,13 +74,18 @@ body{
     transform: translate(-50%, -50%);
     height: 100%;
     max-height: 100vh;
+    max-width: 100vw;
+    width: auto;
     z-index: -1;
     opacity: 0.6;
     filter: blur(20px);
-    animation: pulse 8s infinite alternate;  
+    animation: pulse 8s infinite alternate;
+    overflow: hidden;
     img{
         height:100%;
         width:auto;
+        max-width: 100vw;
+        object-fit: cover;
     } 
 }
 .meSection{
@@ -160,6 +167,7 @@ h1{
     width: 0;
     height: 0;
     pointer-events: none;
+    overflow: visible;
 }  
 .pop-item{
     position: absolute;
@@ -324,50 +332,280 @@ h1{
 
 /* //responsive  */
 @media(max-width: 768px) {
-    .photo-caption{
+    .hero {
+        overflow: hidden;
+    }
+    .container {
+        padding: 1rem;
+        gap: 1.5rem;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    .mePhoto {
+        width: 180px;
+        height: 180px;
+        border-width: 10px;
+        border-radius: 20px;
+    }
+    
+    .photo-caption {
         position: static;
         width: auto;
         right: 0;
         transform: rotate(0deg);
-        margin-top:10px;
+        margin-top: 10px;
+        font-size: 0.9rem;
     }
-    .curved-arrow{
+    
+    .curved-arrow {
         display: none;
     }
+    
+    h1 {
+        font-size: clamp(1.5rem, 6vw, 2.5rem);
+    }
+    
+    .subtitle {
+        font-size: clamp(2rem, 8vw, 4rem);
+        margin: -10px 0 0 0;
+    }
+    
     .pop-item.item-1 img,
     .pop-item.item-2 img,
     .pop-item.item-3 img,
     .pop-item.item-4 img,
     .pop-item.item-5 img,
     .pop-item.item-6 img {
-        width: 180px;
-        height: 180px;
+        width: 150px;
+        height: 150px;
     }  
+    
     .pop-item.size-medium img {
-        width: 130px;
-        height: 130px;
+        width: 110px;
+        height: 110px;
     } 
+    
     .pop-item.size-small img {
-        width: 95px;
-        height: 95px;
+        width: 80px;
+        height: 80px;
     }
+    
     .is-popped .item-1 { 
-        transform: translate(calc(-50% - 35vw), calc(-50% - 18vh)) rotate(-20deg) scale(1); 
+        transform: translate(calc(-50% - 30vw), calc(-50% - 15vh)) rotate(-20deg) scale(1); 
     }
     .is-popped .item-2 { 
-        transform: translate(calc(-50% + 35vw), calc(-50% - 18vh)) rotate(20deg) scale(1); 
+        transform: translate(calc(-50% + 30vw), calc(-50% - 15vh)) rotate(20deg) scale(1); 
     }
     .is-popped .item-3 { 
-        transform: translate(calc(-50% - 35vw), calc(-50% - 4vh)) rotate(20deg) scale(1); 
+        transform: translate(calc(-50% - 30vw), calc(-50% - 3vh)) rotate(20deg) scale(1); 
     }
     .is-popped .item-4 { 
-        transform: translate(calc(-50% + 35vw), calc(-50% - 4vh)) rotate(-20deg) scale(1); 
+        transform: translate(calc(-50% + 30vw), calc(-50% - 3vh)) rotate(-20deg) scale(1); 
     }
     .is-popped .item-5 { 
-        transform: translate(calc(-50% - 25vw), calc(-50% - 28vh)) rotate(-10deg) scale(1); 
+        transform: translate(calc(-50% - 20vw), calc(-50% - 25vh)) rotate(-10deg) scale(1); 
     }
     .is-popped .item-6 {
-        transform: translate(calc(-50% + 25vw), calc(-50% - 28vh)) rotate(-10deg) scale(1);
+        transform: translate(calc(-50% + 20vw), calc(-50% - 25vh)) rotate(-10deg) scale(1);
+    }
+    .is-popped .item-7 {
+        transform: translate(calc(-50% - 40vw), calc(-50% - 10vh)) rotate(15deg) scale(1);
+    }
+    .is-popped .item-8 {
+        transform: translate(calc(-50% + 40vw), calc(-50% - 10vh)) rotate(-15deg) scale(1);
+    }
+    .is-popped .item-9 {
+        transform: translate(calc(-50% - 45vw), calc(-50% - 1vh)) rotate(25deg) scale(1);
+    }
+    .is-popped .item-10 {
+        transform: translate(calc(-50% + 45vw), calc(-50% - 1vh)) rotate(-25deg) scale(1);
+    }
+    .is-popped .item-11 {
+        transform: translate(calc(-50% - 15vw), calc(-50% - 30vh)) rotate(10deg) scale(1);
+    }
+    .is-popped .item-12 {
+        transform: translate(calc(-50% + 15vw), calc(-50% - 30vh)) rotate(-10deg) scale(1);
+    }
+    .is-popped .item-13 {
+        transform: translate(calc(-50% - 15vw), calc(-50% - 6vh)) rotate(10deg) scale(1);
+    }
+    .is-popped .item-14 {
+        transform: translate(calc(-50% + 15vw), calc(-50% - 6vh)) rotate(-10deg) scale(1);
+    }
+    .is-popped .item-15 {
+        transform: translate(calc(-50% - 50vw), calc(-50% - 18vh)) rotate(30deg) scale(1);
+    }
+    .is-popped .item-16 {
+        transform: translate(calc(-50% + 50vw), calc(-50% - 18vh)) rotate(-30deg) scale(1);
+    }
+    .is-popped .item-17 {
+        transform: translate(calc(-50% - 50vw), calc(-50% - 4vh)) rotate(30deg) scale(1);
+    }
+    .is-popped .item-18 {
+        transform: translate(calc(-50% + 50vw), calc(-50% - 4vh)) rotate(-30deg) scale(1);
+    }
+    .is-popped .item-19 {
+        transform: translate(calc(-50% - 10vw), calc(-50% - 35vh)) rotate(5deg) scale(1);
+    }
+    .is-popped .item-20 {
+        transform: translate(calc(-50% + 10vw), calc(-50% - 35vh)) rotate(-5deg) scale(1);
+    }
+    .is-popped .item-21 {
+        transform: translate(calc(-50% - 10vw), calc(-50% - 10vh)) rotate(5deg) scale(1);
+    }
+    .is-popped .item-22 {
+        transform: translate(calc(-50% + 10vw), calc(-50% - 10vh)) rotate(-5deg) scale(1);
+    }
+    .is-popped .item-23 {
+        transform: translate(calc(-50% - 55vw), calc(-50% - 12vh)) rotate(35deg) scale(1);
+    }
+    .is-popped .item-24 {
+        transform: translate(calc(-50% + 55vw), calc(-50% - 12vh)) rotate(-35deg) scale(1);
+    }
+    .is-popped .item-25 {
+        transform: translate(calc(-50% - 55vw), calc(-50% - 0vh)) rotate(35deg) scale(1);
+    }
+    .is-popped .item-26 {
+        transform: translate(calc(-50% + 55vw), calc(-50% - 0vh)) rotate(-35deg) scale(1);
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 20px;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .nav-btn {
+        font-size: clamp(1rem, 4vw, 1.3rem);
+        padding: 12px 20px;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .loading-text {
+        font-size: 1.5rem;
+    }
+    
+    .loading-spinner {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media(max-width: 480px) {
+    .hero {
+        overflow: hidden;
+    }
+    .container {
+        overflow: hidden;
+    }
+    .mePhoto {
+        width: 150px;
+        height: 150px;
+        border-width: 8px;
+    }
+    
+    .pop-item.item-1 img,
+    .pop-item.item-2 img,
+    .pop-item.item-3 img,
+    .pop-item.item-4 img,
+    .pop-item.item-5 img,
+    .pop-item.item-6 img {
+        width: 120px;
+        height: 120px;
+    }  
+    
+    .pop-item.size-medium img {
+        width: 90px;
+        height: 90px;
+    } 
+    
+    .pop-item.size-small img {
+        width: 65px;
+        height: 65px;
+    }
+    
+    .is-popped .item-1 { 
+        transform: translate(calc(-50% - 25vw), calc(-50% - 12vh)) rotate(-20deg) scale(0.8); 
+    }
+    .is-popped .item-2 { 
+        transform: translate(calc(-50% + 25vw), calc(-50% - 12vh)) rotate(20deg) scale(0.8); 
+    }
+    .is-popped .item-3 { 
+        transform: translate(calc(-50% - 25vw), calc(-50% - 2vh)) rotate(20deg) scale(0.8); 
+    }
+    .is-popped .item-4 { 
+        transform: translate(calc(-50% + 25vw), calc(-50% - 2vh)) rotate(-20deg) scale(0.8); 
+    }
+    .is-popped .item-5 { 
+        transform: translate(calc(-50% - 18vw), calc(-50% - 20vh)) rotate(-10deg) scale(0.8); 
+    }
+    .is-popped .item-6 {
+        transform: translate(calc(-50% + 18vw), calc(-50% - 20vh)) rotate(-10deg) scale(0.8);
+    }
+    .is-popped .item-7 {
+        transform: translate(calc(-50% - 35vw), calc(-50% - 8vh)) rotate(15deg) scale(0.8);
+    }
+    .is-popped .item-8 {
+        transform: translate(calc(-50% + 35vw), calc(-50% - 8vh)) rotate(-15deg) scale(0.8);
+    }
+    .is-popped .item-9 {
+        transform: translate(calc(-50% - 38vw), calc(-50% - 0vh)) rotate(25deg) scale(0.8);
+    }
+    .is-popped .item-10 {
+        transform: translate(calc(-50% + 38vw), calc(-50% - 0vh)) rotate(-25deg) scale(0.8);
+    }
+    .is-popped .item-11 {
+        transform: translate(calc(-50% - 12vw), calc(-50% - 25vh)) rotate(10deg) scale(0.8);
+    }
+    .is-popped .item-12 {
+        transform: translate(calc(-50% + 12vw), calc(-50% - 25vh)) rotate(-10deg) scale(0.8);
+    }
+    .is-popped .item-13 {
+        transform: translate(calc(-50% - 12vw), calc(-50% - 5vh)) rotate(10deg) scale(0.8);
+    }
+    .is-popped .item-14 {
+        transform: translate(calc(-50% + 12vw), calc(-50% - 5vh)) rotate(-10deg) scale(0.8);
+    }
+    .is-popped .item-15 {
+        transform: translate(calc(-50% - 42vw), calc(-50% - 15vh)) rotate(30deg) scale(0.8);
+    }
+    .is-popped .item-16 {
+        transform: translate(calc(-50% + 42vw), calc(-50% - 15vh)) rotate(-30deg) scale(0.8);
+    }
+    .is-popped .item-17 {
+        transform: translate(calc(-50% - 42vw), calc(-50% - 3vh)) rotate(30deg) scale(0.8);
+    }
+    .is-popped .item-18 {
+        transform: translate(calc(-50% + 42vw), calc(-50% - 3vh)) rotate(-30deg) scale(0.8);
+    }
+    .is-popped .item-19 {
+        transform: translate(calc(-50% - 8vw), calc(-50% - 28vh)) rotate(5deg) scale(0.8);
+    }
+    .is-popped .item-20 {
+        transform: translate(calc(-50% + 8vw), calc(-50% - 28vh)) rotate(-5deg) scale(0.8);
+    }
+    .is-popped .item-21 {
+        transform: translate(calc(-50% - 8vw), calc(-50% - 8vh)) rotate(5deg) scale(0.8);
+    }
+    .is-popped .item-22 {
+        transform: translate(calc(-50% + 8vw), calc(-50% - 8vh)) rotate(-5deg) scale(0.8);
+    }
+    .is-popped .item-23 {
+        transform: translate(calc(-50% - 45vw), calc(-50% - 10vh)) rotate(35deg) scale(0.8);
+    }
+    .is-popped .item-24 {
+        transform: translate(calc(-50% + 45vw), calc(-50% - 10vh)) rotate(-35deg) scale(0.8);
+    }
+    .is-popped .item-25 {
+        transform: translate(calc(-50% - 45vw), calc(-50% - 0vh)) rotate(35deg) scale(0.8);
+    }
+    .is-popped .item-26 {
+        transform: translate(calc(-50% + 45vw), calc(-50% - 0vh)) rotate(-35deg) scale(0.8);
     }
 }
 

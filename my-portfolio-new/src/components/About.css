@@ -4,9 +4,17 @@
     position: relative;
     padding: 2rem 1rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    scroll-margin-top: 0;
+}
+
+.about-page:not(:first-child) {
+    scroll-margin-top: 0;
 }
 
 /* hearts in the background */
@@ -35,7 +43,7 @@
     50% { opacity: 0.8; transform: scale(1.05); }
 }
 .cyber-hearts {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -140,10 +148,15 @@
 }
 .about-container {
     max-width: 1200px;
+    width: 100%;
     margin: 0 auto;
     padding: 2rem 0;
     position: relative;
     z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
 }
 .about-content {
     display: flex;
@@ -393,11 +406,18 @@
 
 /* responsive */
 @media (max-width: 968px) {
+    .about-container {
+        width: 100%;
+        max-width: 100%;
+    }
     .about-content {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
         padding: 2rem;
+        width: 95%;
+        max-width: 95%;
+        margin: 0 auto;
     }
     .about-image {
         width: 100%;
@@ -417,22 +437,51 @@
 @media (max-width: 640px) {
     .about-page {
         padding: 1rem 0.5rem;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+        box-sizing: border-box;
     }
     .about-container {
-        padding: 1rem 0;
+        padding: 0;
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex: 0 0 auto;
+        box-sizing: border-box;
     }
     .about-content {
-        padding: 1.5rem;
-        border-radius: 20px;
+        padding: 1rem;
+        border-radius: 15px;
+        width: 90%;
+        max-width: 90%;
+        margin: 0;
+        flex-shrink: 0;
+        box-sizing: border-box;
     }
     .about-image {
-        max-width: 300px;
+        max-width: 250px;
     }
     .about-image .me {
-        border-width: 10px;
-        border-radius: 20px;
+        border-width: 8px;
+        border-radius: 15px;
+    }
+    .about-text h1 {
+        font-size: clamp(1.5rem, 6vw, 2.5rem);
+        margin: 0 0 1rem 0;
     }
     .about-text p {
         text-align: left;
+        font-size: clamp(0.9rem, 3vw, 1rem);
+        margin: 0 0 1rem 0;
+        line-height: 1.6;
+    }
+    .typing-text {
+        font-size: clamp(1rem, 3vw, 1.2rem);
+        margin-top: 1rem;
     }
 }
