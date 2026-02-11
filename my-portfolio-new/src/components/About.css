@@ -266,7 +266,7 @@
     background: none;
     border: none;
     color: purple;
-    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
     font-family: 'Pinyon Script', cursive;
     text-decoration: underline wavy purple;
     text-underline-offset: 4px;
