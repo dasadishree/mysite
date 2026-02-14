@@ -7,30 +7,30 @@
       "slides": [
         {
           "subheading": "Petal Pal (Google Code Next LauncH)",
-          "description": "Entrepreneurship/project development summer program where we made a smartpot and a companion app.",
+          "description": "Over the summer of 2025, I participated in Google CodeNext's high school summer program for entrepreneurship/project development/design (see more about my experience in the experiences page!). I worked with a small group to \"Launch\" our product: PetalPal, a smartpot product with a companion app. We made every part of the product, from brainstorming ideas, 3d modelling and prototyping, branding, marketing, building the app, etc. My main role was app developer and UX designer, and I learned so much! We pitched this altogether at the end of the summer.",
           "deployLink": "https://www.canva.com/design/DAGt6AVYIB4/-r9frlrhGgifQqxNvLB5-g/view?utm_content=DAGt6AVYIB4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd7ce6a5f5f",
           "codeLink": "https://github.com/22-Maya/PetalPal",
           "image": "petalpal.png"
         },
         {
           "subheading": "Lookaluxe (Google Code Next iOS Development Workshop)",
-          "description": "An app that finds cheap alternatives to luxury items on the internet",
-          "deployLink": "",
+          "description": "During the spring semester of Google CodeNext sophomore year, I was in the iOS development with AI club, where I learned how to make apps using Swift and AI. Along with a partner, I made Lookaluxe, and app that uses AI to analyze images, then find similar products online through web scraping, offering an easy way to find cheap alternatives to luxury goods online. We presented this at the Spring Showcase which you can see in the experiences section!",
+          "deployLink": "https://docs.google.com/presentation/d/1bqSrmohiYjbngBFSs0AEO6w4tT4m48nyUtjN-rC_MDs/edit?usp=sharing",
           "codeLink": "https://github.com/dasadishree/lookaluxe",
           "image": "lookaluxe.png"
         },
         {
           "subheading": "iOS Accessibility Research & Development",
-          "description": "Made an educational platform/resource for developer awareness of how to integrate iOS accessibility tools into projects",
-          "deployLink": "",
-          "codeLink": "",
+          "description": "Under guidance from Jeremy Cruzado, I participated in a research and development internship where I found a problem: accessibility tools were often not found in apps because of their perceived complexity, so I researched easy ways to implement accessibility features, then created an app guide and informative posts on Linkedin to educate developers on how to widen their audience and make their app more accessible for all easily in less than 10 minutes using Apple's built in accessiblity features.",
+          "deployLink": "https://www.linkedin.com/posts/dasadishree_iosdev-accessibility-swiftui-activity-7365817134226096129-LRKr?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAETTLoYB55UDPhox-zo_pwco-Hm9Q3NHWX8",
+          "codeLink": "https://github.com/iOS_Accessibility",
           "image": "iosaccessibility.png"
         },
         {
           "subheading": "Stampd",
-          "description": "An digitalized loyalty card platform with data analytics for businesses and customers.",
-          "deployLink": "",
-          "codeLink": "",
+          "description": "Stampd is a digital loyalty card platform made for both businesses and customers, with features like data analytics and sorting businesses by category. I intially created this project (website version) at a 24hr hackathon (HackMHS in NJ), but decided to expand on this by ourselves after the hackathon to turn it into an actual iOS app using what I had learned from Code Next's spring club. After submitting to competitons like the Congressional App Challenge and Diamond Challenge, we also presented this at the final Google CodeNext winter showcase.",
+          "deployLink": "https://www.youtube.com/watch?v=T39hWl9X9m4",
+          "codeLink": "https://github.com/emma-w1/Stampd",
           "image": "stampd.png"
         } 
       ]
@@ -42,37 +42,30 @@
       "slides": [
         {
           "subheading": "Soliss (PennApps)",
-          "description": "Wearable UV sensor with a companion app",
-          "deployLink": "",
-          "codeLink": "",
+          "description": "At the University of Pennsylvania's annual hackathon (PennApps), we made a wearable UV sensor called Soliss for skin/sun safety. It also came with a companion app which I spent most of my time working on. The wearable sensor features lots of creativity, from using gum wrappers to conduct electricity, and other creative solutions we had to come up with due to lack of resources.",
+          "deployLink": "https://docs.google.com/presentation/d/1kRaQyKPKHA3sn7sRTVwOSdsWiQJeeMlTRAeg5QPmgUQ/edit?usp=sharing",
+          "codeLink": "https://github.com/emma-w1/PennApps",
           "image": "soliss.png"
         },
         {
           "subheading": "Planetopia (Ascend)",
-          "description": "A fun design-your-own planet game that won the Most Creative Superlative!",
-          "deployLink": "",
-          "codeLink": "",
+          "description": "At Ascend, we got to visit SpaceX HQ in LA, and the whole hackathon was planet/space themed. We made Planetopia, a fun design-your-own planet game/website with art we made ourselves that won the Most Creative Superlative!",
+          "deployLink": "https://planetopia.vercel.app/",
+          "codeLink": "https://github.com/dasadishree/ascend-planetopia",
           "image": "planetopia.png"
         },
         {
-          "subheading": "Stampd (Hack MHS)",
-          "description": "An digitalized loyalty card platform with data analytics for businesses and customers.",
-          "deployLink": "",
-          "codeLink": "",
-          "image": "stampd.png"
-        },
-        {
             "subheading": "Flickflow (TeenhacksLI Jan 2024)",
-            "description": "A hands-free scrolling solution",
-            "deployLink": "",
-            "codeLink": "",
+            "description": "At my very first hackathon freshman year, my sister and I used computer vision to create Flickflow, a hands-free scrolling solution that allows users to scroll and pause videos on Youtube Shorts and Tiktok just by making hand movements like swiping motions. We won the People's Choice Award!",
+            "deployLink": "https://www.youtube.com/watch?v=IjF0mt6F-Hs",
+            "codeLink": "https://github.com/dasadishree/teenhacksli2024-flickflow",
             "image": "flickflow.png"
         },
         {
             "subheading": "Skyglider (Counterspell)",
-            "description": "A infinite game controlling a glider through obstacles",
-            "deployLink": "",
-            "codeLink": "",
+            "description": "At the game jam Counterspell NYC, I made an infinite game controlling a glider through obstacles, winning 2nd place and a Raspberry Pi Zero!",
+            "deployLink": "https://github.com/dasadishree/counterspell-skyglider/blob/main/README.MD",
+            "codeLink": "https://github.com/dasadishree/counterspell-skyglider",
             "image": "skyglider.png"
         }
       ]
@@ -84,9 +77,9 @@
       "slides": [
         {
           "subheading": "Sustainabite (NYJOS Project of Distinction)",
-          "description": "Help combat food waste by redistributing food waste from homes, resteraunts, and buildings to people in need",
-          "deployLink": "",
-          "codeLink": "",
+          "description": "I helped lead an international team to build a project combatting food waste/insecurity. After researching the underlying problems, we decided to build an app redistributing food waste from resteraunts, schools, and homes to those in need to prevent waste.",
+          "deployLink": "https://www.canva.com/design/DAG5RXiTvvA/RcQvvJ78mih2mQ0h4ycZfA/edit?utm_content=DAG5RXiTvvA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton",
+          "codeLink": "https://github.com/dasadishree/sustainabite",
           "image": "sustainabite.png"
         }
       ]
@@ -98,9 +91,9 @@
       "slides": [
         {
           "subheading": "Beyond The Box",
-          "description": "Explain health impacts of ingredients in ingredient lists in a clear way using AI",
-          "deployLink": "",
-          "codeLink": "",
+          "description": "For the Presidential AI Challenge, I used an AI API to create a website that analyzes ingredient lists and explain health impacts of ingredients in ingredient lists in a clear way. You can either upload or take a picture of the list, or copy and paste a list into a text field for analysis.",
+          "deployLink": "https://beyondthebox.netlify.app",
+          "codeLink": "https://github.com/dasadishree/aigov",
           "image": "beyondthebox.png"
         }
       ]
@@ -112,10 +105,10 @@
       "slides": [
         {
           "subheading": "EchoAI",
-          "description": "An AI model that can recognize, distinguish and greet people based on their voice.",
-          "deployLink": "",
-          "codeLink": "",
-          "image": "ipmd.png"
+          "description": "While interning at IPMD, I am developing an AI model that can recognize, distinguish and greet people based on their voice. This will ultimately be used as part of the House of Grace intiative to help neurodiverse populations with developmental disabilities through an online platform.",
+          "deployLink": "https://github.com/dasadishree/echoai/blob/main/README.md",
+          "codeLink": "https://github.com/dasadishre/echoai",
+          "image": "ipmd.jpg"
         }
       ]
     },
@@ -125,10 +118,10 @@
       "header": "Voctab",
       "slides": [
         {
-          "subheading": "Vocab",
-          "description": "Practice vocabulary flashcards with every new tab",
-          "deployLink": "",
-          "codeLink": "",
+          "subheading": "Voctab",
+          "description": "To help myself study for the SAT, I created a Chrome extension that helps you practice vocabulary flashcards with every new tab, manage vocab lists, and even study my vocab list.",
+          "deployLink": "https://chromewebstore.google.com/detail/voctab/pogilbiajbbeakeilojdknkkihnjhloo?pli=1",
+          "codeLink": "https://github.com/dasadishree/voctab",
           "image": "voctab.png"
         }
       ]
@@ -140,51 +133,51 @@
       "slides": [
         {
           "subheading": "Techfluences Website",
-          "description": "Our organization's main website!",
-          "deployLink": "",
-          "codeLink": "",
+          "description": "I created Techfluences in the summer of freshman year to create a high school tech community, inspired by the community I had been in prior through the Girls Who Code Summer Immersion Program. Since then, we've grown to 1,500+ followers, 50+ volunteers, and 6+ countries, running events, tutorials, and creating tech content. Our main goal is to help others innovate, influence, and inspire using technology, and we do this by helping other youth organizations make websites to demonstrate their impact online. This is the link to our website!",
+          "deployLink": "https://techfluences.org",
+          "codeLink": "https://github.com/dasadishree/techfluences-website",
           "image": "techfluences.png"
         },
         {
           "subheading": "Capture-The-Flag bot",
           "description": "A bot that helps moderate/manage a cybersecurity competition via Discord for participants.",
-          "deployLink": "",
-          "codeLink": "",
+          "deployLink": "https://discord.com/oauth2/authorize?client_id=1390477382858706994&permissions=8464034873998417&integration_type=0&scope=bot",
+          "codeLink": "https://github.com/dasadishree/ctfbot",
           "image": "ctf.png"
         },
         {
           "subheading": "Ovra Website",
-          "description": "A website for a partner, Ovra, a youth organization for women's menstrual health.",
-          "deployLink": "",
-          "codeLink": "",
+          "description": "A website for a partner youth organization, Ovra, a youth organization for women's menstrual health by making eco-friendly pads listening to women's concerns.. As CTO of Ovra, I made the entire website and help manage websites, emails, forms, etc.",
+          "deployLink": "https://ovra.health",
+          "codeLink": "https://github.com/dasadishree/ovra",
           "image": "ovra.png"
         },
         {
           "subheading": "SkinfluenceLI Website",
-          "description": "A website for a partner, SkinfluenceLI, a youth organization for skin health and dermatology",
-          "deployLink": "",
-          "codeLink": "",
+          "description": "A website for a partner youth organization, SkinfluenceLI, a youth organization for skin health and dermatology in Long Island through research.",
+          "deployLink": "https://skinfluenceli.netlify.app/",
+          "codeLink": "https://github.com/dasadishree/skinfluence",
           "image": "skinfluence.png"
         },
         {
           "subheading": "Sea The Change Website",
-          "description": "A website for a partner, Sea The Change, a youth organization for a sea, environment, and animal rights",
-          "deployLink": "",
-          "codeLink": "",
+          "description": "A website for a partner youth organization, Sea The Change, a youth organization for a sea, environment, and animal rights through organized beach cleanups, educational posts, drives, etc.",
+          "deployLink": "https://seathechange.netlify.app/",
+          "codeLink": "https://github.com/dasadishree/seathechange",
           "image": "seathechange.png"
         },
         {
           "subheading": "Dialectic Website",
-          "description": "A website for a partner, Dialectic, a youth newspaper and debate",
-          "deployLink": "",
-          "codeLink": "",
+          "description": "A website for a partner youth organization/initiative, The Dialectic, a youth newspaper and debate forum where articles are posted discussing societal topics.",
+          "deployLink": "https://thedialectic.netlify.app",
+          "codeLink": "https://github.com/dasadishree/thedialectic",
           "image": "dialectic.png"
         },
         {
           "subheading": "Stemiverse Website",
-          "description": "A website for a partner, Stemiverse, a youth organization for STEM education",
-          "deployLink": "",
-          "codeLink": "",
+          "description": "A website for a partner youth organization, Stemiverse, a youth organization for accessible STEM education with a podcast discussing different topics within STEM.",
+          "deployLink": "https://stemiverse.netlify.app",
+          "codeLink": "https://github.com/dasadishree/stemiverse",
           "image": "stemiverse.png"
         }
       ]

@@ -382,6 +382,18 @@
         z-index: 5;
     }
     
+    .projects-section h1 {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        text-align: center;
+        margin: 0.5rem auto 1.5rem auto;
+        font-size: clamp(0.9rem, 3vw, 1.1rem);
+        width: 90%;
+        max-width: 500px;
+        z-index: 6;
+    }
+    
     .projectImages {
         position: relative;
         display: grid;
@@ -459,4 +471,14 @@
     .project-item {
         max-width: 140px;
     }
+}
+
+h1{
+    z-index:20;
+    position:absolute;
+    bottom:27%;
+    right:27%;
+    font-size: 2vw;
+    margin: 0;
+    color: #ff1493;
 }
