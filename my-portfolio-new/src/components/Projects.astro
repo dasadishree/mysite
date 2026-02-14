@@ -1,6 +1,6 @@
 ---
 import "./Projects.css";
-import bg1 from '../assets/bg2.jpeg';
+import bg1 from '../assets/bg1.png';
 import projectsData from '../data/projects.json';
 import beyondthebox from '../assets/beyondthebox.png';
 import google from '../assets/google.png';
@@ -9,7 +9,7 @@ import trophy from '../assets/trophy.png';
 import voctab from '../assets/voctab.png';
 import techfluences from '../assets/techfluences.png';
 import sustainabite from '../assets/sustainabite.png';
-
+import projectsText from '../assets/projectstitle.png';
 const projectImages = {
     'beyondthebox': beyondthebox,
     'google': google,
@@ -24,8 +24,8 @@ const projectImages = {
 <div class="projects-section" id="projects">
     <div class="cyberImage">
         <img src={bg1.src} alt="cyber background"> 
-        <h1>my projects</h1>
     </div>
+    <img src={projectsText.src} alt="projects" class="projects-title-img">
     <div class="projectImages">
         {projectsData.projects.map((project) => {
             const projectImage = projectImages[project.id];

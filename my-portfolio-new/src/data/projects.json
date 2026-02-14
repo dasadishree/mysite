@@ -8,15 +8,15 @@
         {
           "subheading": "Petal Pal (Google Code Next LauncH)",
           "description": "Entrepreneurship/project development summer program where we made a smartpot and a companion app.",
-          "deployLink": "",
-          "codeLink": "",
+          "deployLink": "https://www.canva.com/design/DAGt6AVYIB4/-r9frlrhGgifQqxNvLB5-g/view?utm_content=DAGt6AVYIB4&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hd7ce6a5f5f",
+          "codeLink": "https://github.com/22-Maya/PetalPal",
           "image": "petalpal.png"
         },
         {
           "subheading": "Lookaluxe (Google Code Next iOS Development Workshop)",
           "description": "An app that finds cheap alternatives to luxury items on the internet",
           "deployLink": "",
-          "codeLink": "",
+          "codeLink": "https://github.com/dasadishree/lookaluxe",
           "image": "lookaluxe.png"
         },
         {
@@ -83,8 +83,8 @@
       "header": "New York Junior Academy of Sciences: Sustainabite",
       "slides": [
         {
-          "subheading": "Sustainabite (Project of Distinction)",
-          "description": "Help combat food waste by redistrubting food waste from homes, resteraunts, and buildings to people in need",
+          "subheading": "Sustainabite (NYJOS Project of Distinction)",
+          "description": "Help combat food waste by redistributing food waste from homes, resteraunts, and buildings to people in need",
           "deployLink": "",
           "codeLink": "",
           "image": "sustainabite.png"

@@ -471,6 +471,22 @@ h1{
         transform: translate(calc(-50% + 55vw), calc(-50% - 0vh)) rotate(-35deg) scale(1);
     }
     
+    .nav-links {
+        flex-direction:column;
+        align-items:center;
+        gap: 15px;
+    }
+    
+    .nav-btn {
+        width:80%;
+        max-width:250px;
+        text-align:center;
+        font-size:1.2rem;
+        padding: 12px 20px;
+        border-radius:15px;
+        transform: rotate(0deg) !important;
+    }
+    
     .loading-text {
         font-size: 1.5rem;
     }
@@ -493,6 +509,15 @@ h1{
     .social-link svg {
         width: 20px;
         height: 20px;
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+    
+    .nav-btn {
+        font-size: clamp(0.9rem, 3vw, 1.3rem);
+        padding: 8px 18px;
     }
 }
 
@@ -607,6 +632,15 @@ h1{
     .is-popped .item-26 {
         transform: translate(calc(-50% + 45vw), calc(-50% - 0vh)) rotate(-35deg) scale(0.8);
     }
+    
+    .nav-links {
+        gap: 10px;
+    }
+    
+    .nav-btn {
+        font-size: clamp(0.8rem, 3.5vw, 1.1rem);
+        padding: 6px 15px;
+    }
 }
 
 /* buttons on main page */
@@ -614,10 +648,9 @@ h1{
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-top: 40px;
+    flex-wrap:wrap;
 }
 .nav-btn{
-    /* font-family: ; i will pick a cute handwriting google font*/ 
     font-size: 1.5rem;
     text-decoration: none;
     padding: 10px 25px;

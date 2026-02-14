@@ -1,18 +1,18 @@
 .projects-section {
     position: relative;
     width: 100%;
+    height: 120vh;
+    min-height: 800px;
     overflow: hidden;
 }
 
 .cyberImage {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 60vh;
-    min-height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    height: 100%;
+    z-index: 1;
 }
 
 .cyberImage img {
@@ -23,94 +23,90 @@
     opacity: 0.7;
 }
 
-.cyberImage h1 {
+.projects-title-img {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%) rotate(-5deg);
-    font-family: 'Pinyon Script', cursive;
-    font-size: clamp(3rem, 8vw, 8rem);
-    color: #ff69b4;
+    transform: translate(-50%, -50%);
     z-index: 2;
-    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.7);
-    margin: 0;
+    width: 50%;
+    max-width: 600px;
+    height: auto;
     pointer-events: none;
+    filter: drop-shadow(0 0 15px rgba(255, 105, 180, 0.4));
 }
 
-/* Project Images Grid */
+/* project images*/
 .projectImages {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 10;
+    z-index: 15;
     pointer-events: none;
 }
 
 .project-item {
     position: absolute;
     cursor: pointer;
-    transition: all 0.3s ease;
-    border-radius: 15px;
+    transition: transform 0.3s cubic-bezier(0.175, .885, .32, 1.275);
     overflow: hidden;
-    width: 150px;
-    height: 150px;
+    width: 220px;
+    height: 220px;
     pointer-events: auto;
 }
-
-/* Position the 7 projects without overlap, avoiding center area (40-60% vertical, 35-65% horizontal) where "my projects" text is */
-/* Using more spread out positions to ensure no overlap */
 .project-item[data-project-id="beyondthebox"] { 
     top: 5%; 
-    left: 2%; 
-    width: 150px; 
-    height: 150px; 
+    left: 25%; 
+    width: 220px; 
+    height: 220px; 
 }
 .project-item[data-project-id="google"] { 
     top: 5%; 
-    right: 2%; 
-    width: 150px; 
-    height: 150px; 
+    right: 25%; 
+    width: 220px; 
+    height: 220px; 
 }
 .project-item[data-project-id="ipmd"] { 
     top: 18%; 
     left: 1%; 
-    width: 150px; 
-    height: 150px; 
+    width: 220px; 
+    height: 220px; 
 }
 .project-item[data-project-id="trophy"] { 
     top: 22%; 
     right: 5%; 
-    width: 150px; 
-    height: 150px; 
+    width: 220px; 
+    height: 220px; 
 }
 .project-item[data-project-id="voctab"] { 
-    bottom: 12%; 
+    bottom: 25%; 
     left: 2%; 
-    width: 150px; 
-    height: 150px; 
+    width: 220px; 
+    height: 220px; 
 }
 .project-item[data-project-id="techfluences"] { 
     bottom: 15%; 
     right: 1%; 
-    width: 150px; 
-    height: 150px; 
+    width: 220px; 
+    height: 220px; 
 }
 .project-item[data-project-id="sustainabite"] { 
     top: 68%; 
-    left: 30%; 
-    width: 150px; 
-    height: 150px; 
+    left: 20%; 
+    width: 220px; 
+    height: 220px; 
 }
 
 .project-item img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     border-radius: 15px;
     transition: all 0.3s ease;
     display: block;
+    background-color: transparent;
 }
 
 .project-item[data-project-id="beyondthebox"] img { transform: rotate(-5deg); }
@@ -122,7 +118,8 @@
 .project-item[data-project-id="sustainabite"] img { transform: rotate(-7deg); }
 
 .project-item:hover {
-    z-index: 15;
+    z-index: 100;
+    transform: scale(1.2) rotate(0deg) !important;
 }
 
 .project-item[data-project-id="beyondthebox"]:hover img { transform: rotate(-5deg) scale(1.1); }
@@ -359,29 +356,70 @@
 }
 
 @media (max-width: 768px) {
-    .cyberImage {
-        height: 40vh;
-        min-height: 300px;
+    .projects-section {
+        height: auto;
+        min-height: 100vh;
+        padding-bottom: 2rem;
+        position: relative;
     }
     
-    .cyberImage h1 {
-        font-size: clamp(2.5rem, 10vw, 5rem);
+    .cyberImage {
+        height: 100%;
+        min-height: 100vh;
+        position: absolute;
+        z-index: 1;
+    }
+    
+    .projects-title-img {
+        width: 70%;
+        max-width: 400px;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: 2rem auto;
+        display: block;
+        z-index: 5;
     }
     
     .projectImages {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        gap: 15px;
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
         padding: 1rem;
+        width: 100%;
+        height: auto;
+        margin-top: 1rem;
+        z-index: 15;
     }
     
     .project-item {
-        width: 100px;
-        height: 100px;
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        transform: none !important;
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 1;
+        max-width: 180px;
+        margin: 0 auto;
+    }
+    
+    .project-item img {
+        transform: none !important;
+    }
+    
+    .project-item:hover {
+        transform: scale(1.1) !important;
     }
     
     .project-popup-content {
         width: 95%;
         padding: 1.5rem;
+        max-height: 90vh;
     }
     
     .project-slide {
@@ -403,5 +441,22 @@
     .project-link {
         font-size: 0.9rem;
         padding: 0.6rem 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .projects-title-img {
+        width: 85%;
+        margin: 1.5rem auto;
+    }
+    
+    .projectImages {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+    
+    .project-item {
+        max-width: 140px;
     }
 }
