@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         //set slide image
         if (slide.image) {
-            slideImage.src = `/src/assets/${slide.image}`;
+            slideImage.src = `/src/assets/projects/${slide.image}`;
         }
         slideImage.alt = slide.subheading || currentProject.header;
         updateLinks(slide);

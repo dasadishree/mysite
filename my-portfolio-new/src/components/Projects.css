@@ -473,12 +473,13 @@
     }
 }
 
-h1{
+.caption{
     z-index:20;
     position:absolute;
     bottom:27%;
     right:27%;
     font-size: 2vw;
     margin: 0;
-    color: #ff1493;
+    color: yellow;
+    -webkit-text-stroke: 0.1vw orange;
 }

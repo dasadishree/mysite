@@ -1,0 +1,16 @@
+.cursive{
+    color: purple;
+    font-size: clamp(4rem, 5vw, 3.5rem);
+    margin: 0 0 1.5rem 0;
+    font-family: 'Pinyon Script', cursive;
+    line-height: 1.2;
+}
+.stripbg{
+    align-items: center;
+}
+.bigstrip{
+    height:126vh;
+}
+.strip{
+    height: 126vh;
+}

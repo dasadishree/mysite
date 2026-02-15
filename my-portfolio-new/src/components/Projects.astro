@@ -1,15 +1,15 @@
 ---
 import "./Projects.css";
-import bg1 from '../assets/bg1.png';
+import projectsbg from '../assets/backgrounds/projectsbg.png';
 import projectsData from '../data/projects.json';
-import beyondthebox from '../assets/beyondthebox.png';
-import google from '../assets/google.png';
-import ipmd from '../assets/ipmd.jpg';
-import trophy from '../assets/trophy.png';
-import voctab from '../assets/voctab.png';
-import techfluences from '../assets/techfluences.png';
-import sustainabite from '../assets/sustainabite.png';
-import projectsText from '../assets/projectstitle.png';
+import beyondthebox from '../assets/projects/etc/beyondthebox.png';
+import google from '../assets/projects/google/google.png';
+import ipmd from '../assets/projects/etc/ipmd.jpg';
+import trophy from '../assets/projects/hackathons/trophy.png';
+import voctab from '../assets/projects/etc/voctab.png';
+import techfluences from '../assets/projects/techfluences/techfluences.png';
+import sustainabite from '../assets/projects/etc/sustainabite.png';
+import projectsText from '../assets/projects/projectstitle.png';
 const projectImages = {
     'beyondthebox': beyondthebox,
     'google': google,
@@ -23,10 +23,10 @@ const projectImages = {
 
 <div class="projects-section" id="projects">
     <div class="cyberImage">
-        <img src={bg1.src} alt="cyber background"> 
+        <img src={projectsbg.src} alt="cyber background"> 
     </div>
     <img src={projectsText.src} alt="projects" class="projects-title-img">
-    <h1 align="center">click on the projects to see sub-projects,<br> more info, links, pictures, etc!</h1>
+    <h1 align="center" class="caption">click on the projects to see sub-projects,<br> more info, links, pictures, etc!</h1>
     <div class="projectImages">
         {projectsData.projects.map((project) => {
             const projectImage = projectImages[project.id];

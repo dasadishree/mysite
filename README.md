@@ -2,8 +2,7 @@
 view at dasadishree.me
 
 TO-DO:
-- make projects not overlapping and not cropped weird
-- add missing images
+- images in popups not working
 - experiences section: hackathons, summer programs etc w fun images
 (pennapps, parthenon, ascend, hackmhs, thli, ncwit, rutgers, nyjos, gtech, google, LLS)
 - cool interactive backgtorund would be nice, make elements slightly move so tyhat it seems more interacrtve
