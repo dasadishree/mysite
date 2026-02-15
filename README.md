@@ -2,8 +2,15 @@
 view at dasadishree.me
 
 TO-DO:
--fonts not working anymore
--also make projects section less sparse
+- header section button hovers
+- the windows vintage stuff ruined some of the other UI (X button on the stamp card, left/right buttons in popups)
+- experiences button doesnt work
+- fonts not working anymore
+- also make projects section less sparse (maybe display all projects instead of having left/right buttons, and remove the left/right)
+- make sure popup height/width is never larger than the screen, user shouldnt need to scroll in a popup
+- echoai image not there
+- add a short footer
+-maybe put experineces before projects? idk depends how it looks
 
 INSPO:
 - ciaragan.com - i esp like her header section, i like how all the pics/elements kinda get subtly bigger and smaller, i also like the features section on her exhibits page, i want to recreate that w a code backgorund for my coding projects, also i like the stamp vibe on her about page maybe ill recreate that for my awards?
