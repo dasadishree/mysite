@@ -5,6 +5,8 @@ import strip2 from "../assets/collage/strip2.png";
 import strip3 from "../assets/collage/strip3.png";
 import strip4 from "../assets/collage/strip4.png";
 import strip5 from "../assets/collage/strip5.png";
+import track from "../assets/collage/track.png";
+import text from "../assets/collage/experiencesText.png";
 ---
 <html>
     <head>
@@ -14,13 +16,15 @@ import strip5 from "../assets/collage/strip5.png";
         <title>adishree das</title>
     </head>
 
-    <body>
+    <section class="experiences-section">
+        <img src={text.src} alt="my experiences" class="experiences-text">
+        <img src={track.src} alt="track" class="track-polaroid">
         <div class="stripbg">
-            <img src={strip1.src} alt="photobooth strip1" class="bigstrip">
+            <img src={strip1.src} alt="photobooth strip1" class="strip strip-first">
             <img src={strip2.src} alt="photobooth strip2" class="strip">
             <img src={strip3.src} alt="photobooth strip3" class="strip">
             <img src={strip4.src} alt="photobooth strip4" class="strip">
             <img src={strip5.src} alt="photobooth strip5" class="strip">
         </div>
-    </body>
+    </section>
 </html>

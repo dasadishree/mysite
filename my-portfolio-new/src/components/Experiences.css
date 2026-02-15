@@ -1,3 +1,9 @@
+.experiences-section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+}
+
 .cursive{
     color: purple;
     font-size: clamp(4rem, 5vw, 3.5rem);
@@ -5,12 +11,136 @@
     font-family: 'Pinyon Script', cursive;
     line-height: 1.2;
 }
-.stripbg{
-    align-items: center;
+.experiences-text {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    z-index: 100;
+    filter: drop-shadow(0 0 15px rgba(255, 105, 180, 0.4));
+    pointer-events: none;
 }
-.bigstrip{
-    height:126vh;
+
+.track-polaroid {
+    position: absolute;
+    top: 15%;
+    left: 0%;
+    width: 25vw;
+    height: auto;
+    z-index: 90;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.track-polaroid:hover {
+    transform: scale(1.1);
+    filter: hue-rotate(-10deg) saturate(1.3) brightness(1.1);
+}
+
+.stripbg{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 1;
+    --base-strip-width: 1;
 }
 .strip{
     height: 126vh;
+    width: auto;
+    object-fit: contain;
+    object-position: top;
+    flex-shrink: 0;
+    display: block;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.strip:hover {
+    transform: scale(1.1);
+    filter: hue-rotate(-10deg) saturate(1.3) brightness(1.1);
+    z-index: 50;
+    position: relative;
+}
+.strip:not(.strip-first) {
+    width: calc(126vh * 0.2); 
+    min-width: 80px;
+    max-width: 15vw;
+}
+
+.strip-first {
+    width: calc(126vh * 0.2 * 4); 
+    min-width: 320px;
+    max-width: 60vw;
+}
+
+@media (max-width: 768px) {
+    .experiences-text {
+        width: 70%;
+        max-width: 400px;
+        top: 1.5rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .track-polaroid {
+        width: 150vw;
+        top: 8%;
+        right: 3%;
+    }
+    
+    .stripbg {
+        gap: 0;
+    }
+    
+    .strip {
+        height: 100vh;
+    }
+    
+    .strip:not(.strip-first) {
+        width: calc(100vh * 0.2);
+        max-width: 18vw;
+    }
+    
+    .strip-first {
+        width: calc(100vh * 0.2 * 4);
+        max-width: 72vw;
+    }
+}
+
+@media (max-width: 480px) {
+    .experiences-text {
+        width: 85%;
+        top: 1rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .track-polaroid {
+        width: 120px;
+        top: 5%;
+        right: 2%;
+    }
+    
+    .strip {
+        height: 90vh;
+    }
+    
+    .strip:not(.strip-first) {
+        width: calc(90vh * 0.2);
+        max-width: 20vw;
+    }
+    
+    .strip-first {
+        width: calc(90vh * 0.2 * 4);
+        max-width: 80vw;
+    }
 }
