@@ -28,33 +28,64 @@ import campinvention from "../assets/collage/campinvention.png";
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
         <title>adishree das</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/7.css">
+        <link rel="stylesheet" href="https://unpkg.com/98.css">
     </head>
 
     <section class="experiences-section">
         <img src={text.src} alt="my experiences" class="experiences-text">
-        <img src={track.src} alt="track" class="track-polaroid">
         <div class="stripbg">
-            <img src={strip1.src} alt="photobooth strip1" class="strip strip-first">
-            <img src={strip2.src} alt="photobooth strip2" class="strip">
-            <img src={strip3.src} alt="photobooth strip3" class="strip">
-            <img src={strip4.src} alt="photobooth strip4" class="strip">
-            <img src={strip5.src} alt="photobooth strip5" class="strip">
+            <img src={strip1.src} alt="photobooth strip1" class="strip strip-first" data-experience-id="google">
+            <img src={strip2.src} alt="photobooth strip2" class="strip" data-experience-id="ascend">
+            <img src={strip3.src} alt="photobooth strip3" class="strip" data-experience-id="teenhacks">
+            <img src={strip4.src} alt="photobooth strip4" class="strip" data-experience-id="lls">
+            <img src={strip5.src} alt="photobooth strip5" class="strip" data-experience-id="parthenon">
         </div>
         <div class="experience-items">
-            <img src={cornell.src} alt="cornell" class="experience-item">
-            <img src={daydream.src} alt="daydream" class="experience-item">
-            <img src={etre.src} alt="etre" class="experience-item">
-            <img src={gtech.src} alt="gtech" class="experience-item">
-            <img src={ncwit.src} alt="ncwit" class="experience-item">
-            <img src={nyjos.src} alt="nyjos" class="experience-item">
-            <img src={ovra.src} alt="ovra" class="experience-item">
-            <img src={parthenon.src} alt="parthenon" class="experience-item">
-            <img src={pennapps.src} alt="pennapps" class="experience-item">
-            <img src={rutgers.src} alt="rutgers" class="experience-item">
-            <img src={stampd.src} alt="stampd" class="experience-item">
-            <img src={techfluences.src} alt="techfluences" class="experience-item">
-            <img src={techgirls.src} alt="techgirls" class="experience-item">
-            <img src={campinvention.src} alt="campinvention" class="experience-item">
+            <img src={track.src} alt="track" class="experience-item" data-experience-id="track">
+            <img src={cornell.src} alt="cornell" class="experience-item" data-experience-id="cornell">
+            <img src={daydream.src} alt="daydream" class="experience-item" data-experience-id="daydream">
+            <img src={etre.src} alt="etre" class="experience-item" data-experience-id="etre">
+            <img src={gtech.src} alt="gtech" class="experience-item" data-experience-id="gtech">
+            <img src={ncwit.src} alt="ncwit" class="experience-item" data-experience-id="ncwit">
+            <img src={nyjos.src} alt="nyjos" class="experience-item" data-experience-id="nyjos">
+            <img src={ovra.src} alt="ovra" class="experience-item" data-experience-id="ovra">
+            <img src={parthenon.src} alt="parthenon" class="experience-item" data-experience-id="parthenon">
+            <img src={pennapps.src} alt="pennapps" class="experience-item" data-experience-id="pennapps">
+            <img src={rutgers.src} alt="rutgers" class="experience-item" data-experience-id="rutgers">
+            <img src={stampd.src} alt="stampd" class="experience-item" data-experience-id="stampd">
+            <img src={techfluences.src} alt="techfluences" class="experience-item" data-experience-id="techfluences">
+            <img src={techgirls.src} alt="techgirls" class="experience-item" data-experience-id="techgirls">
+            <img src={campinvention.src} alt="campinvention" class="experience-item" data-experience-id="campinvention">
         </div>
     </section>
-</html>
+
+    <!-- windows popup -->
+    <div class="windows-overlay" id="windows-overlay">
+        <div class="windows-window">
+            <div class="windows-titlebar">
+                <span class="windows-title-icon">📁</span>
+                <span class="windows-title-text" id="windows-title">Experience</span>
+                <button class="windows-close-btn" id="windows-close">×</button>
+            </div>
+            <div class="explorer-layout">
+                <div class="tree-view">
+                    <div class="tree-header">Experiences</div>
+                    <div class="tree-items" id="tree-items"></div>
+                </div>
+                <div class="content-pane">
+                    <img id="win-preview-img" class="win-preview-img" src="" alt="Experience image">
+                    <div class="win-text-container">
+                        <h4 id="win-header"></h4>
+                        <p id="win-description"></p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+<script>
+    import "./Experiences.js";
+</script>

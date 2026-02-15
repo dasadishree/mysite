@@ -1,0 +1,137 @@
+{
+  "experiences": [
+    {
+      "id": "cornell",
+      "name": "Cornell HS Coding Competition",
+      "image": "cornell.png",
+      "header": "Cornell High School Coding Competition & Women in Computing At Cornell",
+      "description": "Along with team members from my school, I went to Cornell Tech to participate in the Cornell Women In Computing Workshop, which was super helpful in helping me learning competitive coding. Later, I also competed in the High School Programming Competition with a team of 3, using Python to solve problems."
+    },
+    {
+      "id": "daydream",
+      "name": "Daydream NYC: Hack Club",
+      "image": "daydream.png",
+      "header": "Organizing Daydream NYC, a Hack Club global hackathon",
+      "description": "With the NYC team, I helped host Daydream NYC by sending lots of outreach, sponsor, and venue emails. We had around ~20 participants who all created their own games throughout the hackathon!"
+    },
+    {
+      "id": "track",
+      "name": "Herricks XCTF",
+      "image": "track.png",
+      "header": "Herricks Cross Country & Track (Captain)",
+      "description": "I love running long-distance for fun, especially with friends so that we can run and talk, and racing is always so fulfilling although sometimes a little nerve-wracking. I am one of the captains of my schools varsity cross country and winter/spring track teams, which I've been on since freshman year. I also ran a half marathon in the fall of my freshman year (placing 3rd in my age group), and hope to run another half this summer, and maybeee a full some day."
+    },
+    {
+      "id": "etre",
+      "name": "Etre",
+      "image": "etre.png",
+      "header": "Etre Experience",
+      "description": "While I only recently got involved with Etre Girls, I love the initative so much and enjoyed being featured on Gen E! I am also a part of the Youth Council for Sunnie Reads, and enjoy making content and reading book club books with other teens!"
+    },
+    {
+      "id": "gtech",
+      "name": "HCI Research @Georgia Tech",
+      "image": "gtech.png",
+      "header": "HCI Research @Georgia Tech",
+      "description": "At Georgia Tech under Dr. Rosa Arriaga, I created a research project involving AI and behavior, exploring the question of how humans and AI could potentially interact, and how well AI can replicate, respond to, and understand human behavior, humor, thoughts, feelings, emotions, and even sarcasm. "
+    },
+    {
+      "id": "ncwit",
+      "name": "NCWIT AIC Greater NYC Winner",
+      "image": "ncwit.png",
+      "header": "NCWIT AIC Greater NYC Winner",
+      "description": "From thousands of applicants, I was selected as a Greater NYC Winner for my passions for technology and computer science, invited to an awards ceremony at the Bank Of America tower in NYC. It was so cool being surrounded by so many girls in STEM!"
+    },
+    {
+      "id": "nyjos",
+      "name": "New York Junior Academy of Sciences",
+      "image": "nyjos.png",
+      "header": "New York Junior Academy of Sciences",
+      "description": "I participated in NYJAS in spring 2025 and fall 2025, and hope to participate again this upcoming spring 2026! In spring 2025, I worked with a global team to try to create a research solution to air pollution, finding a cheaper and more environmentally friendly form of glass as our final project. Later, in the fall term, I decided to take on the role of team leader with team members from the US and Egypt, and while navigating difficulties coordinating meeting times, we were able to tackle the problem of food waste and create an app redistributing waste to those in need: Sustainabite, which won Project of Distinction from hundreds of submissions."
+    },
+    {
+      "id": "ovra",
+      "name": "Ovra CTO",
+      "image": "ovra.png",
+      "header": "Ovra CTO",
+      "description": "Ovra is a nonprofit/business creating eco-friendly pads for women's menstrual health, also running lots of events for awareness like fundraisers, period cramp simulators, and yoga. As CTO, I manage the Ovra website and also help out with fundraisers and brainstorming, and I think this mission is very important!"
+    },
+    {
+      "id": "parthenon",
+      "name": "Parthenon: Hack Club Athena Initiative",
+      "image": "parthenon.png",
+      "header": "Parthenon: Hack Club Athena Initiative",
+      "description": "I LOVE the Hack Club Athena Initiative and absolutely want to get involved more. In Nov 2024, I helped organize Parthenon by coordinating outreach to mentors for the event, which was the largest high school girls hackathon in the world, with over 150 participants from 13+ countries. The event was genuinely so fun, especially being able to see so many girls explore their passion and make fun projects from rizz detectors to brainrotted games."
+    },
+    {
+      "id": "pennapps",
+      "name": "PennApps: Soliss",
+      "image": "pennapps.png",
+      "header": "PennApps: Soliss",
+      "description": "At the University of Pennsylvania's annual hackathon PennApps, we made an UV sensing wearable shirt and companion app. It was my first big hackathon with college and high school students, and while intimidating I think I learned a lot from the experience!"
+    },
+    {
+      "id": "rutgers",
+      "name": "Rutgers Computational Psychiatry Research",
+      "image": "rutgers.png",
+      "header": "Rutgers Computational Psychiatry Research",
+      "description": "Under the mentorship of Professor Salman Qasim, I spent the summer working on a research project analyzing how emotions, words, and stimuli affect how our brains remember past events in our memory through intrusions, conducting data analysis using Python and writing a paper/presentation for JV LISEF at the end."
+    },
+    {
+      "id": "stampd",
+      "name": "Stampd",
+      "image": "stampd.png",
+      "header": "Stampd",
+      "description": "Stampd originated as a small, hackathon project that was initially just a website, but we decided to expand it to be so much more. We decided a mobile application would be more suitable for a digitalized loyalty card platform for businesses/consumers, so we coded up an iOS app and marketed it to local businesses, submitted it to the Congressional App Challenge, Diamond Challenge, Blue Ocean Challenge, and pitched it at a Google showcase."
+    },
+    {
+      "id": "techfluences",
+      "name": "Techfluences",
+      "image": "techfluences.png",
+      "header": "Techfluences",
+      "description": "Techfluences is a nonprofit I started freshman year to create a community of young, tech learners, expanding to over 1500+ followers from 6+ countries today. We make websites for youth organizations, host events and competitions, teach coding through tutorials, and create blog posts.."
+    },
+    {
+      "id": "techgirls",
+      "name": "TechGirls Finalist",
+      "image": "techgirls.png",
+      "header": "TechGirls Finalist",
+      "description": "As a TechGirls finalist, I love the TechGirls community so much and everyone is so supportive. Even though I was unable to take part in the summer exchange program, every TechGirl who I have talked to online is so nice, passionate, and supportive."
+    },
+    {
+      "id": "campinvention",
+      "name": "Camp Invention Leadership Intern",
+      "image": "campinvention.png",
+      "header": "Camp Invention Leadership Intern",
+      "description": "Over the last two summers, I've volunteered as a Leadership Intern at a local STEM camp, Camp Invention, and love being able to talk to cute kids who love learning, and teach others!"
+    },
+    {
+      "id": "google",
+      "name": "Google Code Next Student Engineer & Launch",
+      "image": "strip1.png",
+      "header": "Google Code Next Student Engineer & Launch",
+      "description": "I joined the Google high school program at the beginning of sophomore year, coming to the lab weekly to participate in clubs like Web Development, Machine Learning, and iOS Development w/ AI. However, I never started growing outside of my comfort zone until the spring, where I decided to present my app Lookaluxe at the spring showcase. After applying, I was selected for the summer program Launch, a startup accelerator/product development/design program where we created a smartpot PetalPal. The program unfortunately ended in Dec 2025, but this was one of my favorite experiences ever and I hope to stay in touch with all the friends and teachers I met there!"
+    },
+    {
+      "id": "ascend",
+      "name": "Ascend: Hack Club",
+      "image": "strip2.png",
+      "header": "Ascend: Hack Club",
+      "description": "Ascend was my first Hack Club hackathon experience, where I was one of 50 girls flown out to Los Angeles, SpaceX HQ for a space-themed hackathon. This hackathon really inspired me to keep getting involved in Hack Club/Athena and go to a lot more hackathons ( I really discovered my love for hackathons!!)"
+    },
+    {
+      "id": "teenhacks",
+      "name": "TeenhacksLI Organizer: Jan & June 2025",
+      "image": "strip3.png",
+      "header": "TeenhacksLI Organizer: Jan & June 2025",
+      "description": "As a TeenHacks participant who won the People's Choice Award, I decided to apply for a leadership role, helping with marketing/public relations for our January 2025 event at Adelphi University with 30+ participants. I also was a core organizer for our June 2025 event."
+    },
+    {
+      "id": "lls",
+      "name": "Leukemia & Lymphoma Society SVOY",
+      "image": "strip4.png",
+      "header": "Leukemia & Lymphoma Society SVOY",
+      "description": "As a Student Visionary of the Year for the Leukemia and Lymphoma Society, I led a team of 10+ and fundraised $10,000+ for blood cancer advocacy, running a website-making campaign, hosting business meetings with local companies for sponsors, and sending out letters/emails. For our efforts, I earned my team the Hall of Fame status!"
+    }
+  ]
+}

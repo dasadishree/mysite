@@ -2,10 +2,8 @@
 view at dasadishree.me
 
 TO-DO:
-- images in popups not working
-- experiences section: hackathons, summer programs etc w fun images
-(pennapps, parthenon, ascend, hackmhs, thli, ncwit, rutgers, nyjos, gtech, google, LLS)
-- cool interactive backgtorund would be nice, make elements slightly move so tyhat it seems more interacrtve
+-fonts not working anymore
+-also make projects section less sparse
 
 INSPO:
 - ciaragan.com - i esp like her header section, i like how all the pics/elements kinda get subtly bigger and smaller, i also like the features section on her exhibits page, i want to recreate that w a code backgorund for my coding projects, also i like the stamp vibe on her about page maybe ill recreate that for my awards?
