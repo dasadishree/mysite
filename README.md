@@ -1,12 +1,18 @@
 # my personal website!
 view at dasadishree.me
 
-TO-DO:
-- also make projects section less sparse (maybe display all projects instead of having left/right buttons, and remove the left/right)
-
 INSPO:
 - ciaragan.com - i esp like her header section, i like how all the pics/elements kinda get subtly bigger and smaller, i also like the features section on her exhibits page, i want to recreate that w a code backgorund for my coding projects, also i like the stamp vibe on her about page maybe ill recreate that for my awards?
 - den.cool -  i like the 3d elemenets and balloons and how they r interactive
+
+
+
+
+
+
+
+
+
 
 # Astro Starter Kit: Basics
 

@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // load experiences
     async function loadExperiences() {
         try {
-            const response = await fetch('/src/data/experiences.json');
+            const response = await fetch('/data/experiences.json');
             const data = await response.json();
             experiencesData = data.experiences;
             populateTreeView();

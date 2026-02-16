@@ -2,7 +2,8 @@ body{
     background-image: url("aura.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Valera Round", sans-serif 
+    font-family: "Valera Round", sans-serif;
+    min-height:100vh;
 }
 h1{
     color:purple;
