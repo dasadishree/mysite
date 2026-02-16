@@ -3,19 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const popupOverlay = document.getElementById('project-popup-overlay');
     const popupClose = document.getElementById('project-popup-close');
     const popupHeader = document.getElementById('project-popup-header');
-    const slideImage = document.getElementById('project-slide-image');
-    const slideSubheading = document.getElementById('project-subheading');
-    const slideDescription = document.getElementById('project-description');
-    const slideIndicator = document.getElementById('project-slide-indicator');
+    const projectImage = document.getElementById('project-image');
+    const projectSubheading = document.getElementById('project-subheading');
+    const projectDescription = document.getElementById('project-description');
     const projectLinks = document.getElementById('project-links');
-    const prevBtn = document.getElementById('project-prev-btn');
-    const nextBtn = document.getElementById('project-next-btn');
     
     let currentProject = null;
-    let currentSlideIndex = 0;
-    let allSlides = [];
     
-    //popup
+    // popup 
     projectItems.forEach(item => {
         item.addEventListener('click', () => {
             const projectData = JSON.parse(item.getAttribute('data-project-data'));
@@ -26,59 +21,42 @@ document.addEventListener('DOMContentLoaded', () => {
     
     function openPopup(project) {
         currentProject = project;
-        allSlides = project.slides || [];
-        currentSlideIndex = 0;
-        popupHeader.textContent = project.header;
-        updateSlide();
+        popupHeader.textContent = project.subheading || "Project";
+        if (project.image) {
+            projectImage.src = `/src/assets/projects/${project.image}`;
+        }
+        projectImage.alt = project.subheading || "Project";
+        projectSubheading.textContent = project.subheading || "";
+        projectDescription.textContent = project.description || "";
+        updateLinks(project);
         popupOverlay.classList.add('active');
         document.body.style.overflow = 'hidden';
     }
     
-    function updateSlide() {
-        if (!currentProject || allSlides.length === 0) return;
-        
-        const slide = allSlides[currentSlideIndex];
-        slideSubheading.textContent = slide.subheading || "";
-        slideDescription.textContent = slide.description || "";
-        
-        //set slide image
-        if (slide.image) {
-            slideImage.src = `/src/assets/projects/${slide.image}`;
-        }
-        slideImage.alt = slide.subheading || currentProject.header;
-        updateLinks(slide);
-        const totalSlides = allSlides.length;
-        slideIndicator.textContent = `${currentSlideIndex + 1} / ${totalSlides}`;
-        
-        // update buttons
-        prevBtn.disabled = currentSlideIndex === 0;
-        nextBtn.disabled = currentSlideIndex === allSlides.length - 1;
-    }
-    
-    function updateLinks(slide) {
+    function updateLinks(project) {
         projectLinks.innerHTML = "";
         
-        if (slide.deployLink || slide.codeLink) {
+        if (project.deployLink || project.codeLink) {
             const linksContainer = document.createElement('div');
             linksContainer.className = 'project-links-container';
             
-            if (slide.deployLink) {
+            if (project.deployLink) {
                 const deployLink = document.createElement('a');
-                deployLink.href = slide.deployLink;
+                deployLink.href = project.deployLink;
                 deployLink.target = '_blank';
                 deployLink.rel = 'noopener noreferrer';
                 deployLink.className = 'project-link project-link-deploy';
-                deployLink.textContent = 'View';
+                deployLink.textContent = 'View Live';
                 linksContainer.appendChild(deployLink);
             }
             
-            if (slide.codeLink) {
+            if (project.codeLink) {
                 const codeLink = document.createElement('a');
-                codeLink.href = slide.codeLink;
+                codeLink.href = project.codeLink;
                 codeLink.target = '_blank';
                 codeLink.rel = 'noopener noreferrer';
                 codeLink.className = 'project-link project-link-code';
-                codeLink.textContent = 'See Code';
+                codeLink.textContent = 'View Code';
                 linksContainer.appendChild(codeLink);
             }
             
@@ -86,32 +64,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
-    //nav button
-    if (prevBtn) {
-        prevBtn.addEventListener('click', () => {
-            if (currentSlideIndex > 0) {
-                currentSlideIndex--;
-                updateSlide();
-            }
-        });
-    }
-    
-    if (nextBtn) {
-        nextBtn.addEventListener('click', () => {
-            if (currentProject && currentSlideIndex < allSlides.length - 1) {
-                currentSlideIndex++;
-                updateSlide();
-            }
-        });
-    }
-    
     // close
     const closePopup = () => {
         popupOverlay.classList.remove('active');
         document.body.style.overflow = '';
         currentProject = null;
-        currentSlideIndex = 0;
-        allSlides = [];
     };
     
     if (popupClose) {
@@ -125,7 +82,6 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
         
-        // escape
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && popupOverlay.classList.contains('active')) {
                 closePopup();

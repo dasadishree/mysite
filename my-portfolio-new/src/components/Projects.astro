@@ -2,24 +2,7 @@
 import "./Projects.css";
 import projectsbg from '../assets/backgrounds/projectsbg.png';
 import projectsData from '../data/projects.json';
-import beyondthebox from '../assets/projects/etc/beyondthebox.png';
-import google from '../assets/projects/google/google.png';
-import ipmd from '../assets/projects/etc/ipmd.jpg';
-import trophy from '../assets/projects/hackathons/trophy.png';
-import voctab from '../assets/projects/etc/voctab.png';
-import techfluences from '../assets/projects/techfluences/techfluences.png';
-import sustainabite from '../assets/projects/etc/sustainabite.png';
 import projectsText from '../assets/projects/projectstitle.png';
-
-const projectImages = {
-    'beyondthebox': beyondthebox,
-    'google': google,
-    'ipmd': ipmd,
-    'trophy': trophy,
-    'voctab': voctab,
-    'techfluences': techfluences,
-    'sustainabite': sustainabite
-};
 ---
 
 <div class="projects-section" id="projects">
@@ -27,18 +10,16 @@ const projectImages = {
         <img src={projectsbg.src} alt="cyber background"> 
     </div>
     <img src={projectsText.src} alt="projects" class="projects-title-img">
-    <h1 align="center" class="caption">click on the projects to see sub-projects,<br> more info, links, pictures, etc!</h1>
+    <h1 align="center" class="caption">click on the projects to see more info, links, pictures, etc!</h1>
     <div class="projectImages">
-        {projectsData.projects.map((project) => {
-            const projectImage = projectImages[project.id];
-            if (!projectImage) return null;
+        {projectsData.projects.map((project, index) => {
             return (
                 <div 
                     class="project-item" 
-                    data-project-id={project.id}
+                    data-project-index={index}
                     data-project-data={JSON.stringify(project)}
                 >
-                    <img src={projectImage.src} alt={project.header || project.name} />
+                    <img src={`/src/assets/projects/${project.image}`} alt={project.subheading || "Project"} />
                 </div>
             );
         })}
@@ -50,22 +31,17 @@ const projectImages = {
     <div class="project-popup-content">
         <button class="project-popup-close" id="project-popup-close">&times;</button>
         <div class="project-popup-header" id="project-popup-header"></div>
-        <div class="project-slides-container">
-            <div class="project-slide" id="project-slide">
-                <div class="project-slide-left">
-                    <img id="project-slide-image" src="" alt="Project image">
+        <div class="project-content-container">
+            <div class="project-content">
+                <div class="project-image-container">
+                    <img id="project-image" src="" alt="Project image">
                 </div>
-                <div class="project-slide-right">
+                <div class="project-text-container">
                     <h2 class="project-subheading" id="project-subheading"></h2>
                     <p class="project-description" id="project-description"></p>
                     <div class="project-links" id="project-links"></div>
                 </div>
             </div>
-        </div>
-        <div class="project-slide-controls">
-            <button class="project-slide-btn project-prev-btn" id="project-prev-btn">‹</button>
-            <span class="project-slide-indicator" id="project-slide-indicator">1 / 1</span>
-            <button class="project-slide-btn project-next-btn" id="project-next-btn">›</button>
         </div>
     </div>
 </div>
