@@ -1,5 +1,5 @@
 # my personal website!
-view at dasadishree.me
+view at https://dasadishree.me
 
 INSPO:
 - ciaragan.com - i esp like her header section, i like how all the pics/elements kinda get subtly bigger and smaller, i also like the features section on her exhibits page, i want to recreate that w a code backgorund for my coding projects, also i like the stamp vibe on her about page maybe ill recreate that for my awards?
