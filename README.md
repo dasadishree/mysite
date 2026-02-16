@@ -5,6 +5,8 @@ INSPO:
 - ciaragan.com - i esp like her header section, i like how all the pics/elements kinda get subtly bigger and smaller, i also like the features section on her exhibits page, i want to recreate that w a code backgorund for my coding projects, also i like the stamp vibe on her about page maybe ill recreate that for my awards?
 - den.cool -  i like the 3d elemenets and balloons and how they r interactive
 
+<img width="1470" height="956" alt="Screenshot 2026-02-16 at 6 48 51 PM" src="https://github.com/user-attachments/assets/62f33631-511c-44e4-b5d2-7671a3cd06ce" />
+<img width="1470" height="956" alt="Screenshot 2026-02-16 at 6 48 51 PM" src="https://github.com/user-attachments/assets/62f33631-511c-44e4-b5d2-7671a3cd06ce" />
 
 
 
