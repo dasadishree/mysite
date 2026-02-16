@@ -9,16 +9,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const description = document.getElementById('win-description');
     const treeItems = document.getElementById('tree-items');
     
+    if (!overlay || !treeItems) {
+        console.error('Required elements not found');
+        return;
+    }
+    
     let experiencesData = [];
     let currentExperienceId = null;
     
     // load experiences
     async function loadExperiences() {
+        if (window.__EXPERIENCES_DATA__) {
+            if (Array.isArray(window.__EXPERIENCES_DATA__)) {
+                experiencesData = window.__EXPERIENCES_DATA__;
+            } else if (window.__EXPERIENCES_DATA__.experiences) {
+                experiencesData = window.__EXPERIENCES_DATA__.experiences;
+            } else {
+                experiencesData = window.__EXPERIENCES_DATA__;
+            }
+            populateTreeView();
+            return;
+        }
+        
         try {
             const response = await fetch('/data/experiences.json');
-            const data = await response.json();
-            experiencesData = data.experiences;
-            populateTreeView();
+            if (response.ok) {
+                const data = await response.json();
+                experiencesData = data.experiences || data;
+                populateTreeView();
+            } else {
+                console.error('Failed to load experiences data');
+            }
         } catch (error) {
             console.error('Error loading experiences:', error);
         }
@@ -44,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!experience) return;
         currentExperienceId = id;
         titleText.textContent = experience.name;
-        previewImg.src = `/src/assets/collage/${experience.image}`;
+        previewImg.src = `/collage/${experience.image}`;
         previewImg.alt = experience.name;
         header.textContent = experience.header;
         description.textContent = experience.description;
@@ -59,11 +80,20 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // popup
     function openPopup(experienceId) {
+        if (!experienceId) {
+            console.error('No experience ID provided');
+            return;
+        }
+        
         if (experiencesData.length === 0) {
             loadExperiences().then(() => {
-                selectExperience(experienceId);
-                overlay.classList.add('active');
-                document.body.style.overflow = 'hidden';
+                if (experiencesData.length > 0) {
+                    selectExperience(experienceId);
+                    overlay.classList.add('active');
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    console.error('Failed to load experiences data');
+                }
             });
         } else {
             selectExperience(experienceId);

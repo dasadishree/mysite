@@ -309,7 +309,7 @@
     margin: 0;
 }
 
-/* mobile Responsive */
+/* mobile responsive */
 @media (max-width: 768px) {
     .experiences-section {
         min-height: var(--mobile-section-height) !important;

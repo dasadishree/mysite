@@ -1,81 +1,63 @@
 ---
 import "./Experiences.css";
-import strip1 from "../assets/collage/strip1.png";
-import strip2 from "../assets/collage/strip2.png";
-import strip3 from "../assets/collage/strip3.png";
-import strip4 from "../assets/collage/strip4.png";
-import strip5 from "../assets/collage/strip5.png";
-import track from "../assets/collage/track.png";
-import text from "../assets/collage/experiencesText.png";
-import cornell from "../assets/collage/cornell.png";
-import daydream from "../assets/collage/daydream.png";
-import etre from "../assets/collage/etre.png";
-import gtech from "../assets/collage/gtech.png";
-import ncwit from "../assets/collage/ncwit.png";
-import nyjos from "../assets/collage/nyjos.png";
-import ovra from "../assets/collage/ovra.png";
-import parthenon from "../assets/collage/parthenon.png";
-import pennapps from "../assets/collage/pennapps.png";
-import rutgers from "../assets/collage/rutgers.png";
-import stampd from "../assets/collage/stampd.png";
-import techfluences from "../assets/collage/techfluences.png";
-import techgirls from "../assets/collage/techgirls.png";
-import campinvention from "../assets/collage/campinvention.png";
-import experiences from "../data/experiences.json";
+import experiencesData from "../data/experiences.json";
 ---
 <section class="experiences-section" id="experiences">
-        <img src={text.src} alt="my experiences" class="experiences-text">
-        <div class="stripbg">
-            <img src={strip1.src} alt="photobooth strip1" class="strip strip-first" data-experience-id="google">
-            <img src={strip2.src} alt="photobooth strip2" class="strip" data-experience-id="ascend">
-            <img src={strip3.src} alt="photobooth strip3" class="strip" data-experience-id="teenhacks">
-            <img src={strip4.src} alt="photobooth strip4" class="strip" data-experience-id="lls">
-            <img src={strip5.src} alt="photobooth strip5" class="strip" data-experience-id="parthenon">
-        </div>
-        <div class="experience-items">
-            <img src={track.src} alt="track" class="experience-item" data-experience-id="track">
-            <img src={cornell.src} alt="cornell" class="experience-item" data-experience-id="cornell">
-            <img src={daydream.src} alt="daydream" class="experience-item" data-experience-id="daydream">
-            <img src={etre.src} alt="etre" class="experience-item" data-experience-id="etre">
-            <img src={gtech.src} alt="gtech" class="experience-item" data-experience-id="gtech">
-            <img src={ncwit.src} alt="ncwit" class="experience-item" data-experience-id="ncwit">
-            <img src={nyjos.src} alt="nyjos" class="experience-item" data-experience-id="nyjos">
-            <img src={ovra.src} alt="ovra" class="experience-item" data-experience-id="ovra">
-            <img src={parthenon.src} alt="parthenon" class="experience-item" data-experience-id="parthenon">
-            <img src={pennapps.src} alt="pennapps" class="experience-item" data-experience-id="pennapps">
-            <img src={rutgers.src} alt="rutgers" class="experience-item" data-experience-id="rutgers">
-            <img src={stampd.src} alt="stampd" class="experience-item" data-experience-id="stampd">
-            <img src={techfluences.src} alt="techfluences" class="experience-item" data-experience-id="techfluences">
-            <img src={techgirls.src} alt="techgirls" class="experience-item" data-experience-id="techgirls">
-            <img src={campinvention.src} alt="campinvention" class="experience-item" data-experience-id="campinvention">
-        </div>
-    </section>
+    <img src="/collage/experiencesText.png" alt="my experiences" class="experiences-text">
+    <div class="stripbg">
+        <img src="/collage/strip1.png" alt="photobooth strip1" class="strip strip-first" data-experience-id="google">
+        <img src="/collage/strip2.png" alt="photobooth strip2" class="strip" data-experience-id="ascend">
+        <img src="/collage/strip3.png" alt="photobooth strip3" class="strip" data-experience-id="teenhacks">
+        <img src="/collage/strip4.png" alt="photobooth strip4" class="strip" data-experience-id="lls">
+        <img src="/collage/strip5.png" alt="photobooth strip5" class="strip" data-experience-id="parthenon">
+    </div>
+    <div class="experience-items">
+        <img src="/collage/track.png" alt="track" class="experience-item" data-experience-id="track">
+        <img src="/collage/cornell.png" alt="cornell" class="experience-item" data-experience-id="cornell">
+        <img src="/collage/daydream.png" alt="daydream" class="experience-item" data-experience-id="daydream">
+        <img src="/collage/etre.png" alt="etre" class="experience-item" data-experience-id="etre">
+        <img src="/collage/gtech.png" alt="gtech" class="experience-item" data-experience-id="gtech">
+        <img src="/collage/ncwit.png" alt="ncwit" class="experience-item" data-experience-id="ncwit">
+        <img src="/collage/nyjos.png" alt="nyjos" class="experience-item" data-experience-id="nyjos">
+        <img src="/collage/ovra.png" alt="ovra" class="experience-item" data-experience-id="ovra">
+        <img src="/collage/parthenon.png" alt="parthenon" class="experience-item" data-experience-id="parthenon">
+        <img src="/collage/pennapps.png" alt="pennapps" class="experience-item" data-experience-id="pennapps">
+        <img src="/collage/rutgers.png" alt="rutgers" class="experience-item" data-experience-id="rutgers">
+        <img src="/collage/stampd.png" alt="stampd" class="experience-item" data-experience-id="stampd">
+        <img src="/collage/techfluences.png" alt="techfluences" class="experience-item" data-experience-id="techfluences">
+        <img src="/collage/techgirls.png" alt="techgirls" class="experience-item" data-experience-id="techgirls">
+        <img src="/collage/campinvention.png" alt="campinvention" class="experience-item" data-experience-id="campinvention">
+    </div>
+</section>
 
-    <!-- windows popup -->
-    <div class="windows-overlay" id="windows-overlay">
-        <div class="windows-window">
-            <div class="windows-titlebar">
-                <span class="windows-title-icon">📁</span>
-                <span class="windows-title-text" id="windows-title">Experience</span>
-                <button class="windows-close-btn" id="windows-close">×</button>
+<!-- windows popup -->
+<div class="windows-overlay" id="windows-overlay">
+    <div class="windows-window">
+        <div class="windows-titlebar">
+            <span class="windows-title-icon">📁</span>
+            <span class="windows-title-text" id="windows-title">Experience</span>
+            <button class="windows-close-btn" id="windows-close">×</button>
+        </div>
+        <div class="explorer-layout">
+            <div class="tree-view">
+                <div class="tree-header">Experiences</div>
+                <div class="tree-items" id="tree-items"></div>
             </div>
-            <div class="explorer-layout">
-                <div class="tree-view">
-                    <div class="tree-header">Experiences</div>
-                    <div class="tree-items" id="tree-items"></div>
+            <div class="content-pane">
+                <img id="win-preview-img" class="win-preview-img" src="" alt="Experience image">
+                <div class="win-text-container">
+                    <h4 id="win-header"></h4>
+                    <p id="win-description"></p>
                 </div>
-                <div class="content-pane">
-                    <img id="win-preview-img" class="win-preview-img" src="" alt="Experience image">
-                    <div class="win-text-container">
-                        <h4 id="win-header"></h4>
-                        <p id="win-description"></p>
-                    </div>
-                </div>
-            </div>
             </div>
         </div>
-    </section>
+    </div>
+</div>
 
+<script define:vars={{ experiencesData }}>
+    // Set data immediately when script loads
+    window.__EXPERIENCES_DATA__ = experiencesData;
+</script>
 <script>
     import "./Experiences.js";
 </script>

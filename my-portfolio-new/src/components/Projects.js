@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         currentProject = project;
         popupHeader.textContent = project.subheading || "Project";
         if (project.image) {
-            projectImage.src = `/src/assets/projects/${project.image}`;
+            projectImage.src = `/projects/${project.image}`;
         }
         projectImage.alt = project.subheading || "Project";
         projectSubheading.textContent = project.subheading || "";

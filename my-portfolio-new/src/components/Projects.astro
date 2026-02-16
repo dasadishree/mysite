@@ -2,14 +2,13 @@
 import "./Projects.css";
 import projectsbg from '../assets/backgrounds/projectsbg.png';
 import projectsData from '../data/projects.json';
-import projectsText from '../assets/projects/projectstitle.png';
 ---
 
 <div class="projects-section" id="projects">
     <div class="cyberImage">
         <img src={projectsbg.src} alt="cyber background"> 
     </div>
-    <img src={projectsText.src} alt="projects" class="projects-title-img">
+    <img src="/projects/projectstitle.png" alt="projects" class="projects-title-img">
     <h1 align="center" class="caption">click on the projects to see more info, links, pictures, etc!</h1>
     <div class="projectImages">
         {projectsData.projects.map((project, index) => {
@@ -19,7 +18,7 @@ import projectsText from '../assets/projects/projectstitle.png';
                     data-project-index={index}
                     data-project-data={JSON.stringify(project)}
                 >
-                    <img src={`/src/assets/projects/${project.image}`} alt={project.subheading || "Project"} />
+                    <img src={`/projects/${project.image}`} alt={project.subheading || "Project"} />
                 </div>
             );
         })}
