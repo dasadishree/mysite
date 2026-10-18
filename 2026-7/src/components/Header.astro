@@ -2,32 +2,6 @@
 const {title, description} = Astro.props;
 import auraImage from "../assets/backgrounds/aura.jpg";
 import meImage from "../assets/me/me.jpg";
-import img1 from "../assets/headerpopup/1.webp";
-import img2 from "../assets/headerpopup/2.jpg";
-import img3 from "../assets/headerpopup/3.png";
-import img4 from "../assets/headerpopup/4.JPG";
-import img5 from "../assets/headerpopup/5.jpg";
-import img6 from "../assets/headerpopup/6.svg";
-import img7 from "../assets/headerpopup/7.png";
-import img8 from "../assets/headerpopup/8.png";
-import img9 from "../assets/headerpopup/9.jpg";
-import img10 from "../assets/headerpopup/10.png";
-import img11 from "../assets/headerpopup/11.JPEG";
-import img12 from "../assets/headerpopup/12.JPEG";
-import img13 from "../assets/headerpopup/13.jpg";
-import img14 from "../assets/headerpopup/14.jpg";
-import img15 from "../assets/headerpopup/15.JPG";
-import img16 from "../assets/headerpopup/16.jpg";
-import img17 from "../assets/headerpopup/17.PNG";
-import img18 from "../assets/headerpopup/18.JPG";
-import img19 from "../assets/headerpopup/19.jpg";
-import img20 from "../assets/headerpopup/20.JPG";
-import img21 from "../assets/headerpopup/21.jpg";
-import img22 from "../assets/headerpopup/22.JPG";
-import img23 from "../assets/headerpopup/23.jpg";
-import img24 from "../assets/headerpopup/24.jpeg";
-import img25 from "../assets/headerpopup/25.JPG";
-import img26 from "../assets/headerpopup/26.jpg";
 import "./Header.css";
 ---
 <html>
@@ -39,107 +13,19 @@ import "./Header.css";
     </head>
 
     <body>
-        <!-- loading screen -->
-        <div id="loading-screen" class="loading-screen">
-            <div class="loading-content">
-                <div class="loading-spinner"></div>
-                <p class="loading-text">Loading</p>
-            </div>
-        </div>
-
-        <header class="hero" id="main-content" style="display: none;">
+        <header class="hero" id="main-content">
             <div class="auraImg">
                 <img src={auraImage.src} alt="aura background"/>
             </div>
             <div class="container">
                 <div class="meSection">
                     <div class="photo-caption">
-                        <span>click on my picture!!</span>
+                        <span>*website semi-under construction / not fully updated!!!!!*</span>
                         <svg class="curved-arrow" width="50" height="50" viewBox="0 0 50 50" fill="none">
                             <path d="m40 10C35 15 25 15 15 35M15 35L12 25M15 35L25 32" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
                     <img src={meImage.src} alt="an image of me (adishree)!!" class="mePhoto" id="main-photo">
-                    <div class="surround-images">
-                        <span class="pop-item item-1">
-                            <img src={img1.src} alt="Image 1" />
-                        </span>
-                        <span class="pop-item item-2">
-                            <img src={img2.src} alt="Image 2" />
-                        </span>
-                        <span class="pop-item item-3">
-                            <img src={img3.src} alt="Image 3" />
-                        </span>
-                        <span class="pop-item item-4">
-                            <img src={img4.src} alt="Image 4" />
-                        </span>
-                        <span class="pop-item item-5">
-                            <img src={img5.src} alt="Image 5" />
-                        </span>
-                        <span class="pop-item item-6">
-                            <img src={img6.src} alt="Image 6"/>
-                        </span>
-                        <span class="pop-item item-7 shape-circle size-small">
-                            <img src={img7.src} alt="Image 7" />
-                        </span>
-                        <span class="pop-item item-8 shape-star size-medium">
-                            <img src={img8.src} alt="Image 8" />
-                        </span>
-                        <span class="pop-item item-9 shape-heart size-small">
-                            <img src={img9.src} alt="Image 9" />
-                        </span>
-                        <span class="pop-item item-10 shape-circle size-medium">
-                            <img src={img10.src} alt="Image 10" />
-                        </span>
-                        <span class="pop-item item-11 shape-star size-small">
-                            <img src={img11.src} alt="Image 11" />
-                        </span>
-                        <span class="pop-item item-12 shape-heart size-medium">
-                            <img src={img12.src} alt="Image 12" />
-                        </span>
-                        <span class="pop-item item-13 shape-circle size-small">
-                            <img src={img13.src} alt="Image 13" />
-                        </span>
-                        <span class="pop-item item-14 size-medium">
-                            <img src={img14.src} alt="Image 14" />
-                        </span>
-                        <span class="pop-item item-15 shape-star size-small">
-                            <img src={img15.src} alt="Image 15" />
-                        </span>
-                        <span class="pop-item item-16 shape-heart size-medium">
-                            <img src={img16.src} alt="Image 16" />
-                        </span>
-                        <span class="pop-item item-17 shape-circle size-small">
-                            <img src={img17.src} alt="Image 17" />
-                        </span>
-                        <span class="pop-item item-18 shape-star size-medium">
-                            <img src={img18.src} alt="Image 18" />
-                        </span>
-                        <span class="pop-item item-19 shape-heart size-small">
-                            <img src={img19.src} alt="Image 19" />
-                        </span>
-                        <span class="pop-item item-20 size-medium">
-                            <img src={img20.src} alt="Image 20" />
-                        </span>
-                        <span class="pop-item item-21 shape-circle size-small">
-                            <img src={img21.src} alt="Image 21" />
-                        </span>
-                        <span class="pop-item item-22 shape-star size-medium">
-                            <img src={img22.src} alt="Image 22" />
-                        </span>
-                        <span class="pop-item item-23 shape-heart size-small">
-                            <img src={img23.src} alt="Image 23" />
-                        </span>
-                        <span class="pop-item item-24 shape-circle size-medium">
-                            <img src={img24.src} alt="Image 24" />
-                        </span>
-                        <span class="pop-item item-25 size-small">
-                            <img src={img25.src} alt="Image 25" />
-                        </span>
-                        <span class="pop-item item-26 shape-star size-medium">
-                            <img src={img26.src} alt="Image 26" />
-                        </span>
-                    </div>
                 </div>
 
                 <div class="text">
@@ -149,7 +35,6 @@ import "./Header.css";
 
                 <div class="nav-links">
                     <a href="#about" class="nav-btn btn-1">about me</a>
-                    <a href="#projects" class="nav-btn btn-2">projects</a>
                     <a href="#experiences" class="nav-btn btn-3">experiences</a>
                 </div>
                 <div class="social-links">
@@ -182,7 +67,3 @@ import "./Header.css";
         </header>
     </body>
 </html>
-
-<script>
-    import "./Header.js";
-</script>
