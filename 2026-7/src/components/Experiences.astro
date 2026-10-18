@@ -1,0 +1,63 @@
+---
+import "./Experiences.css";
+import experiencesData from "../data/experiences.json";
+---
+<section class="experiences-section" id="experiences">
+    <img src="/collage/experiencesText.png" alt="my experiences" class="experiences-text">
+    <div class="stripbg">
+        <img src="/collage/strip1.png" alt="photobooth strip1" class="strip strip-first" data-experience-id="google">
+        <img src="/collage/strip2.png" alt="photobooth strip2" class="strip" data-experience-id="ascend">
+        <img src="/collage/strip3.png" alt="photobooth strip3" class="strip" data-experience-id="teenhacks">
+        <img src="/collage/strip4.png" alt="photobooth strip4" class="strip" data-experience-id="lls">
+        <img src="/collage/strip5.png" alt="photobooth strip5" class="strip" data-experience-id="parthenon">
+    </div>
+    <div class="experience-items">
+        <img src="/collage/track.png" alt="track" class="experience-item" data-experience-id="track">
+        <img src="/collage/cornell.png" alt="cornell" class="experience-item" data-experience-id="cornell">
+        <img src="/collage/daydream.png" alt="daydream" class="experience-item" data-experience-id="daydream">
+        <img src="/collage/etre.png" alt="etre" class="experience-item" data-experience-id="etre">
+        <img src="/collage/gtech.png" alt="gtech" class="experience-item" data-experience-id="gtech">
+        <img src="/collage/ncwit.png" alt="ncwit" class="experience-item" data-experience-id="ncwit">
+        <img src="/collage/nyjos.png" alt="nyjos" class="experience-item" data-experience-id="nyjos">
+        <img src="/collage/ovra.png" alt="ovra" class="experience-item" data-experience-id="ovra">
+        <img src="/collage/parthenon.png" alt="parthenon" class="experience-item" data-experience-id="parthenon">
+        <img src="/collage/pennapps.png" alt="pennapps" class="experience-item" data-experience-id="pennapps">
+        <img src="/collage/rutgers.png" alt="rutgers" class="experience-item" data-experience-id="rutgers">
+        <img src="/collage/stampd.png" alt="stampd" class="experience-item" data-experience-id="stampd">
+        <img src="/collage/techfluences.png" alt="techfluences" class="experience-item" data-experience-id="techfluences">
+        <img src="/collage/techgirls.png" alt="techgirls" class="experience-item" data-experience-id="techgirls">
+        <img src="/collage/campinvention.png" alt="campinvention" class="experience-item" data-experience-id="campinvention">
+    </div>
+</section>
+
+<!-- windows popup -->
+<div class="windows-overlay" id="windows-overlay">
+    <div class="windows-window">
+        <div class="windows-titlebar">
+            <span class="windows-title-icon">📁</span>
+            <span class="windows-title-text" id="windows-title">Experience</span>
+            <button class="windows-close-btn" id="windows-close">×</button>
+        </div>
+        <div class="explorer-layout">
+            <div class="tree-view">
+                <div class="tree-header">Experiences</div>
+                <div class="tree-items" id="tree-items"></div>
+            </div>
+            <div class="content-pane">
+                <img id="win-preview-img" class="win-preview-img" src="" alt="Experience image">
+                <div class="win-text-container">
+                    <h4 id="win-header"></h4>
+                    <p id="win-description"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script define:vars={{ experiencesData }}>
+    // Set data immediately when script loads
+    window.__EXPERIENCES_DATA__ = experiencesData;
+</script>
+<script>
+    import "./Experiences.js";
+</script>

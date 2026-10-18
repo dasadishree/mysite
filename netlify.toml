@@ -1,0 +1,4 @@
+[build]
+  base = "2026-7"
+  command = "npm run build"
+  publish = "dist"

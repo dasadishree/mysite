@@ -1,0 +1,50 @@
+---
+import "./Projects.css";
+import projectsbg from '../assets/backgrounds/projectsbg.png';
+import projectsData from '../data/projects.json';
+---
+
+<div class="projects-section" id="projects">
+    <div class="cyberImage">
+        <img src={projectsbg.src} alt="cyber background"> 
+    </div>
+    <img src="/projects/projectstitle.png" alt="projects" class="projects-title-img">
+    <h1 align="center" class="caption">click on the projects to see more info, links, pictures, etc!</h1>
+    <div class="projectImages">
+        {projectsData.projects.map((project, index) => {
+            return (
+                <div 
+                    class="project-item" 
+                    data-project-index={index}
+                    data-project-data={JSON.stringify(project)}
+                >
+                    <img src={`/projects/${project.image}`} alt={project.subheading || "Project"} />
+                </div>
+            );
+        })}
+    </div>
+</div>
+
+<!-- project popup -->
+<div class="project-popup-overlay" id="project-popup-overlay">
+    <div class="project-popup-content">
+        <button class="project-popup-close" id="project-popup-close">&times;</button>
+        <div class="project-popup-header" id="project-popup-header"></div>
+        <div class="project-content-container">
+            <div class="project-content">
+                <div class="project-image-container">
+                    <img id="project-image" src="" alt="Project image">
+                </div>
+                <div class="project-text-container">
+                    <h2 class="project-subheading" id="project-subheading"></h2>
+                    <p class="project-description" id="project-description"></p>
+                    <div class="project-links" id="project-links"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    import "./Projects.js";
+</script>
